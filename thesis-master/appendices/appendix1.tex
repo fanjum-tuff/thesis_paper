@@ -1,0 +1,469 @@
+\chapter{Your first appendix}
+\section{The title of the first section}
+The appendices work exactly the same way as chapters, they are numbered with letters rather than numbers though.
+
+
+NEED Coefficients A-K evaluated in the appendix and referenced in chapter 3.
+
+% ======================================================================
+%  Appendix  --  Fitting of the power-law exponents
+%  Referenced from Chapter 6 as \ref{app:exponents}
+% ======================================================================
+
+\section{Fitting of the power-law exponents}
+\label{app:exponents}
+
+Every sensitivity in Chapter~\ref{chap:parametric} is reported as the
+exponent $n$ of a power law $y \propto x^{\,n}$ fitted across the swept
+range. An exponent is used in preference to a percentage change because it
+does not depend on how wide the range happens to be. This appendix sets out
+how each one was obtained and lists them all in one place.
+
+\subsection*{Method}
+
+A power law $y = a x^{\,n}$ becomes a straight line under logarithms,
+\begin{equation}
+\label{eq:loglin}
+\ln y = \ln a + n \ln x ,
+\end{equation}
+so $n$ is the gradient of $\ln y$ against $\ln x$ and is found by ordinary
+least squares. Writing $x_i = \ln(\text{input})$ and
+$y_i = \ln(\text{output})$ for the $N$ points of a sweep,
+\begin{equation}
+\label{eq:lsq}
+n = \frac{N \sum x_i y_i - \sum x_i \sum y_i}
+         {N \sum x_i^2 - \left(\sum x_i\right)^2},
+\qquad
+\ln a = \frac{\sum y_i - n \sum x_i}{N} .
+\end{equation}
+The quality of the fit is reported as the coefficient of determination,
+\begin{equation}
+\label{eq:r2}
+R^2 = 1 - \frac{\sum (y_i - \hat y_i)^2}{\sum (y_i - \bar y)^2},
+\end{equation}
+evaluated on the fitted values $\hat y_i = a x_i^{\,n}$ in physical units
+rather than on the logarithms, so that it measures agreement with the
+quantity actually of interest.
+
+\subsection*{Worked example: capacity against bar diameter}
+
+The six cases of Table~\ref{tab:sweepdb} give the following.
+
+\begin{table}[H]
+\centering
+\caption{Least-squares working for $F_{II} \propto d_b^{\,n}$, from the
+         bar-diameter sweep at $L = \SI{150}{\milli\metre}$.}
+\label{tab:lsqwork}
+\small
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}cccccc@{}}
+\hline
+$d_b$ (mm) & $F_{II}$ (kN) & $x = \ln d_b$ & $y = \ln F_{II}$
+           & $xy$ & $x^2$ \\
+\hline
+8  & 8.82560  & 2.079442 & 2.177657 & 4.528310 & 4.324077 \\
+10 & 10.76008 & 2.302585 & 2.375843 & 5.470581 & 5.301898 \\
+12 & 12.68776 & 2.484907 & 2.540638 & 6.313248 & 6.174761 \\
+16 & 16.44306 & 2.772589 & 2.799904 & 7.762981 & 7.687248 \\
+20 & 19.98282 & 2.995732 & 2.994873 & 8.971837 & 8.974412 \\
+24 & 23.25610 & 3.178054 & 3.146567 & 9.999961 & 10.100026 \\
+\hline
+$\sum$ & & 15.813308 & 16.035481 & 43.046917 & 42.562423 \\
+\hline
+\end{tabular*}
+\end{table}
+
+Substituting into \eqref{eq:lsq} with $N = 6$,
+\begin{align}
+n &= \frac{6(43.046917) - (15.813308)(16.035481)}
+          {6(42.562423) - (15.813308)^2}
+   = \frac{4.707497}{5.313822}
+   = 0.8859 , \\[4pt]
+\ln a &= \frac{16.035481 - 0.8859 \times 15.813308}{6} = 0.337754
+      \quad\Longrightarrow\quad a = 1.4018 ,
+\end{align}
+so that
+\begin{equation}
+\label{eq:dbfit}
+F_{II} = 1.402\, d_b^{0.886}\ \si{\kilo\newton},
+\qquad R^2 = 0.99975 ,
+\end{equation}
+with $d_b$ in millimetres. The residuals are given in
+Table~\ref{tab:lsqresid}; none exceeds \SI{0.7}{\percent}.
+
+\begin{table}[H]
+\centering
+\caption{Residuals of the fit \eqref{eq:dbfit}.}
+\label{tab:lsqresid}
+\small
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}cccc@{}}
+\hline
+$d_b$ (mm) & measured $F_{II}$ (kN) & fitted (kN) & error (\%) \\
+\hline
+8  & 8.826  & 8.846  & $+0.23$ \\
+10 & 10.760 & 10.779 & $+0.18$ \\
+12 & 12.688 & 12.669 & $-0.15$ \\
+16 & 16.443 & 16.346 & $-0.59$ \\
+20 & 19.983 & 19.919 & $-0.32$ \\
+24 & 23.256 & 23.410 & $+0.66$ \\
+\hline
+\end{tabular*}
+\end{table}
+
+\subsection*{Second worked example: capacity against cover, with exclusions}
+
+The cover sweep differs from the one above in that two of its eight cases
+are excluded before fitting. The reason is set out in
+Section~\ref{sec:geomcover}; the arithmetic is as follows.
+
+The Area Method averages over a half-disc of radius
+$R_{avg} = 1.32\,l_{char} = \SI{26.4}{\milli\metre}$, which at
+$l_{item} = \SI{2}{\milli\metre}$ requires
+$\lceil 26.4/2 \rceil = 14$ radial items. The number that actually fit
+between the bar surface and the outer face is
+$\lfloor (r_e - d_b/2)/l_{item} \rfloor$, giving
+Table~\ref{tab:clipcheck}.
+
+\begin{table}[H]
+\centering
+\caption{Whether the averaging disc fits inside the concrete. Fourteen
+         radial items are required.}
+\label{tab:clipcheck}
+\small
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}ccccc@{}}
+\hline
+$r_e$ (mm) & $c = r_e - d_b/2$ (mm) & $c/d_b$ & items that fit & status \\
+\hline
+25  & 19  & 1.583 & 9  & clipped \\
+30  & 24  & 2.000 & 12 & clipped \\
+40  & 34  & 2.833 & 17 & admissible \\
+50  & 44  & 3.667 & 22 & admissible \\
+60  & 54  & 4.500 & 27 & admissible \\
+75  & 69  & 5.750 & 34 & admissible \\
+90  & 84  & 7.000 & 42 & admissible \\
+110 & 104 & 8.667 & 52 & admissible \\
+\hline
+\end{tabular*}
+\end{table}
+
+Applying \eqref{eq:lsq} to the six admissible points, with
+$x = \ln(c/d_b)$ and $y = \ln F_{II}$:
+
+\begin{table}[H]
+\centering
+\caption{Least-squares working for $F_{II} \propto (c/d_b)^{\,n}$, six
+         admissible points.}
+\label{tab:lsqcov}
+\small
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}cccccc@{}}
+\hline
+$c/d_b$ & $F_{II}$ (kN) & $x$ & $y$ & $xy$ & $x^2$ \\
+\hline
+2.833 & 11.07883 & 1.041454 & 2.405036 & 2.504734 & 1.084626 \\
+3.667 & 11.28173 & 1.299283 & 2.423185 & 3.148403 & 1.688136 \\
+4.500 & 11.76825 & 1.504077 & 2.465405 & 3.708160 & 2.262249 \\
+5.750 & 12.68776 & 1.749200 & 2.540638 & 4.444083 & 3.059700 \\
+7.000 & 13.69603 & 1.945910 & 2.617106 & 5.092653 & 3.786566 \\
+8.667 & 15.09083 & 2.159484 & 2.714087 & 5.861029 & 4.663372 \\
+\hline
+$\sum$ & & 9.699409 & 15.165457 & 24.759062 & 16.544650 \\
+\hline
+\end{tabular*}
+\end{table}
+
+\begin{align}
+n &= \frac{6(24.759062) - (9.699409)(15.165457)}
+          {6(16.544650) - (9.699409)^2}
+   = \frac{1.458410}{5.189374} = 0.2810 , \\[4pt]
+\ln a &= \frac{15.165457 - 0.2810 \times 9.699409}{6} = 2.073260
+      \quad\Longrightarrow\quad a = 7.951 ,
+\end{align}
+so that
+\begin{equation}
+\label{eq:covfitapp}
+F_{II} = 7.951 \left(\frac{c}{d_b}\right)^{0.281}\ \si{\kilo\newton},
+\qquad R^2 = 0.9428 .
+\end{equation}
+
+Repeating the fit on all eight points, including the two clipped cases,
+returns $F_{II} = 9.199\,(c/d_b)^{0.199}$ with $R^2 = 0.8566$. The two
+inadmissible points therefore reduce the exponent by \SI{29}{\percent} and
+the coefficient of determination from \num{0.94} to \num{0.86}, which is
+why they are excluded.
+
+\subsection*{Third worked example: decomposing the concrete-strength
+             exponent}
+
+The exponent on concrete strength is not obtained from a single fit. It is
+built from three quantities, because $f'_c$ reaches the capacity by two
+separate routes: through the strengths $f_t = f_v = 0.5\sqrt{f'_c}$ that
+normalise the interaction index, and through the modulus $E_c$ that
+determines how stress is distributed. Each route is measured separately
+and the two are then combined.
+
+\paragraph{The three fits.}
+Applying \eqref{eq:lsq} to the three data sets gives
+Table~\ref{tab:fcfits}.
+
+\begin{table}[H]
+\centering
+\caption{The three fits behind the concrete-strength exponent.}
+\label{tab:fcfits}
+\small
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}llcrc@{}}
+\hline
+Fit & Source & $N$ & $n$ & $R^2$ \\
+\hline
+$\tau_u$ against $f'_c$ & Table~\ref{tab:sweepfc}, $E_c$ tied & 7
+  & $+0.3901$ & 0.99832 \\
+$\tau_u$ against $E_c$  & Table~\ref{tab:sweepEc}, $f'_c$ fixed & 6
+  & $-0.3084$ & 0.99991 \\
+$E_c$ against $f'_c$    & \textcite{as3600ConcreteStructures2018} Tab.~3.1.2 & 7
+  & $+0.3562$ & 0.98034 \\
+\hline
+\end{tabular*}
+\end{table}
+
+\paragraph{Combining them.}
+Since $\tau_u$ depends on $f'_c$ through both $f_t$ and $E_c$, the chain
+rule in logarithmic variables gives
+\begin{equation}
+\label{eq:chain}
+\frac{\mathrm{d}\ln \tau_u}{\mathrm{d}\ln f'_c}
+  = \frac{\partial \ln \tau_u}{\partial \ln f_t}
+    \frac{\mathrm{d}\ln f_t}{\mathrm{d}\ln f'_c}
+  + \frac{\partial \ln \tau_u}{\partial \ln E_c}
+    \frac{\mathrm{d}\ln E_c}{\mathrm{d}\ln f'_c} .
+\end{equation}
+
+The first term is known exactly rather than fitted. From
+$f_t = 0.5\sqrt{f'_c}$ the second factor is $\tfrac12$, and the first is
+unity: the interaction index \eqref{eq:indexrecall} is homogeneous of
+degree $-2$ in the strengths, so scaling $f_t$ and $f_v$ together by any
+factor scales the failure load by the same factor, giving
+$\partial \ln \tau_u / \partial \ln f_t = 1$. The strength route therefore
+contributes $1 \times 0.5 = 0.500$.
+
+The second term is the product of two measured quantities from
+Table~\ref{tab:fcfits}, $(-0.3084)(0.3562) = -0.1099$. Hence
+\begin{equation}
+\label{eq:decompapp}
+\frac{\mathrm{d}\ln \tau_u}{\mathrm{d}\ln f'_c}
+  = 0.500 - 0.110 = 0.390 ,
+\end{equation}
+against the directly fitted \num{0.3901}. The two agree to four decimal
+places.
+
+Read the other way, \eqref{eq:chain} can be solved for the one factor that
+was asserted rather than measured:
+\begin{equation}
+\frac{\partial \ln \tau_u}{\partial \ln f_t}
+  = \frac{0.3901 - (-0.3084)(0.3562)}{0.5} = 1.0000 ,
+\end{equation}
+which confirms the homogeneity argument numerically.
+
+\paragraph{Local exponents.}
+The exponent is not quite constant across the range, because the modulus
+table flattens at high strength. Table~\ref{tab:fcdrift} applies
+\eqref{eq:decompapp} to each interval in turn.
+
+\begin{table}[H]
+\centering
+\caption{Local exponent on concrete strength, measured against the value
+         predicted by \eqref{eq:decompapp} applied interval by interval.}
+\label{tab:fcdrift}
+\small
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}ccccc@{}}
+\hline
+Interval (MPa) & $n(E_c)$ & predicted $n(\tau_u)$ & measured $n(\tau_u)$
+               & difference \\
+\hline
+20--25 & 0.478 & 0.353 & 0.348 & $-0.004$ \\
+25--32 & 0.486 & 0.350 & 0.349 & $-0.002$ \\
+32--40 & 0.385 & 0.381 & 0.381 & $-0.001$ \\
+40--50 & 0.265 & 0.418 & 0.420 & $+0.002$ \\
+50--65 & 0.275 & 0.415 & 0.417 & $+0.002$ \\
+65--80 & 0.275 & 0.415 & 0.417 & $+0.002$ \\
+\hline
+\end{tabular*}
+\end{table}
+
+The agreement holds to within \num{0.005} at every interval, so the
+decomposition does more than reproduce the average exponent: it predicts
+how that exponent varies across the range, from the modulus table alone.
+
+These values use the same two-point formula as
+\eqref{eq:localslope}. For the interval $f'_c = \SI{40}{}$ to
+\SI{50}{\mega\pascal}, over which $E_c$ rises from \SI{32800}{} to
+\SI{34800}{\mega\pascal} and $\tau_u$ from \SI{2.443}{} to
+\SI{2.683}{\mega\pascal},
+\begin{align}
+n(E_c) &= \frac{\ln(34800/32800)}{\ln(50/40)}
+        = \frac{0.059189}{0.223144} = 0.265 , \\[2pt]
+\text{predicted } n(\tau_u) &= 0.500 + (-0.3084)(0.265) = 0.418 , \\[2pt]
+\text{measured } n(\tau_u) &= \frac{\ln(2.683/2.443)}{\ln(50/40)}
+        = 0.420 .
+\end{align}
+
+\subsection*{Fourth worked example: the shear-to-tensile strength ratio}
+
+The exponent quoted in Section~\ref{sec:matratio} is fitted in the same
+way as the others, but it describes a relationship that is not in fact a
+power law. Both the fit and the exact expression are given here.
+
+\paragraph{The fitted exponent.}
+Applying \eqref{eq:lsq} to the six cases of Table~\ref{tab:sweepratio},
+with $x = \ln(f_v/f_t)$ and $y = \ln F_{II}$:
+
+\begin{table}[H]
+\centering
+\caption{Least-squares working for $F_{II} \propto (f_v/f_t)^{\,n}$.}
+\label{tab:lsqfv}
+\small
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}cccccc@{}}
+\hline
+$f_v/f_t$ & $F_{II}$ (kN) & $x$ & $y$ & $xy$ & $x^2$ \\
+\hline
+0.50 & 7.480  & $-0.693147$ & 2.012233 & $-1.394773$ & 0.480453 \\
+0.75 & 10.406 & $-0.287682$ & 2.342383 & $-0.673861$ & 0.082761 \\
+1.00 & 12.688 & $ 0.000000$ & 2.540657 & $ 0.000000$ & 0.000000 \\
+1.25 & 14.415 & $ 0.223144$ & 2.668269 & $ 0.595407$ & 0.049793 \\
+1.50 & 15.709 & $ 0.405465$ & 2.754234 & $ 1.116746$ & 0.164402 \\
+2.00 & 17.418 & $ 0.693147$ & 2.857504 & $ 1.980671$ & 0.480453 \\
+\hline
+$\sum$ & & 0.340927 & 15.175279 & 1.624189 & 1.257862 \\
+\hline
+\end{tabular*}
+\end{table}
+
+\begin{equation}
+n = \frac{6(1.624189) - (0.340927)(15.175279)}
+         {6(1.257862) - (0.340927)^2}
+  = \frac{4.571477}{7.430941} = 0.6152 ,
+\end{equation}
+with $R^2 = 0.967$. That is the weakest fit of any reported in
+Chapter~\ref{chap:parametric}, and individual points are in error by up to
+\SI{6.5}{\percent} --- an order of magnitude worse than the other sweeps.
+The reason is that the underlying relationship is not a power law.
+
+\paragraph{The exact expression.}
+Write the averaged stresses at the governing station, evaluated at the
+reference load $F_{ref}$, as $\bar\sigma_\theta = a f_t$ and
+$\bar\tau_{rz} = b f_t$. Putting $f_v = k f_t$ into
+\eqref{eq:indexrecall} gives an index of $a^2 + b^2/k^2$ at that load, and
+since the index is homogeneous of degree two in the load,
+\begin{equation}
+\label{eq:fvexact}
+F_{II}(k) = \frac{F_{ref}}{\sqrt{a^2 + b^2/k^2}} .
+\end{equation}
+The two constants follow from the baseline case. At $k = 1$ the normalised
+stresses at failure are $\hat\sigma = 0.612$ and $\hat\tau = 0.791$ with
+$F_{II} = \SI{12.688}{\kilo\newton}$, so scaling back to
+$F_{ref} = \SI{50}{\kilo\newton}$,
+\begin{equation}
+a = 0.612 \times \frac{50}{12.688} = 2.412 ,
+\qquad
+b = 0.791 \times \frac{50}{12.688} = 3.117 .
+\end{equation}
+
+\begin{table}[H]
+\centering
+\caption{The closed form \eqref{eq:fvexact} against the computed values
+         and against the power-law fit.}
+\label{tab:fvexact}
+\small
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}crrrrr@{}}
+\hline
+$f_v/f_t$ & computed & \eqref{eq:fvexact} & error & power law & error \\
+          & (kN) & (kN) & (\%) & (kN) & (\%) \\
+\hline
+0.50 & 7.480  & 7.480  & $ 0.00$ & 7.908  & $+5.7$ \\
+0.75 & 10.406 & 10.405 & $-0.01$ & 10.148 & $-2.5$ \\
+1.00 & 12.688 & 12.687 & $-0.01$ & 12.113 & $-4.5$ \\
+1.25 & 14.415 & 14.413 & $-0.02$ & 13.895 & $-3.6$ \\
+1.50 & 15.709 & 15.706 & $-0.02$ & 15.544 & $-1.1$ \\
+2.00 & 17.418 & 17.412 & $-0.03$ & 18.554 & $+6.5$ \\
+\hline
+\end{tabular*}
+\end{table}
+
+Equation~\eqref{eq:fvexact} reproduces every case to better than
+\SI{0.1}{\percent}. Its two limits are the reason the power law fails. For
+$k \to 0$ the shear term dominates and $F_{II} \to F_{ref} k / b$, linear
+in $k$; for $k \to \infty$ the shear term vanishes and
+$F_{II} \to F_{ref}/a = \SI{20.7}{\kilo\newton}$, a ceiling set by hoop
+tension alone. The local slope is therefore
+\begin{equation}
+\frac{\mathrm{d}\ln F_{II}}{\mathrm{d}\ln k}
+  = \frac{b^2/k^2}{a^2 + b^2/k^2},
+\end{equation}
+which falls from \num{0.870} at $k = 0.5$ to \num{0.295} at $k = 2$. The
+fitted \num{0.615} is an average over that range and should not be
+extrapolated beyond it.
+
+\subsection*{All fitted exponents}
+
+Table~\ref{tab:allexp} collects every exponent quoted in
+Chapter~\ref{chap:parametric}, each obtained by \eqref{eq:lsq} applied to
+the corresponding sweep.
+
+\begin{table}[H]
+\centering
+\caption{Power-law exponents for every factor, fitted by
+         \eqref{eq:lsq}. A positive exponent means the output rises with
+         the input.}
+\label{tab:allexp}
+\small
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lcrrr@{}}
+\hline
+Factor $x$ & $N$ & $n(F_{II})$ & $n(\tau_u)$ & $n(k_s)$ \\
+\hline
+Embedment length $L$                & 8 & $+0.131$ & $-0.869$ & $+0.064$ \\
+Bar diameter $d_b$ (fixed $L$)      & 6 & $+0.886$ & $-0.114$ & $+1.318$ \\
+Bar diameter $d_b$ (fixed $L/d_b$)  & 6 & $+0.898$ & $-1.102$ & $+1.318$ \\
+Cover ratio $c/d_b$\,$^{\dagger}$   & 6 & $+0.281$ & $+0.281$ & $-0.289$ \\
+Rib thickness $t_{rib}$             & 6 & $-0.001$ & $-0.001$ & $-0.001$ \\
+Concrete strength $f'_c$            & 7 & $+0.390$ & $+0.390$ & $+0.137$ \\
+Concrete modulus $E_c$              & 6 & $-0.308$ & $-0.308$ & $+0.384$ \\
+Strength ratio $f_v/f_t$\,$^{\S}$   & 6 & $+0.615$ & $+0.615$ & $\pm0$ \\
+Poisson's ratio $\nu_c$             & 5 & $+0.022$ & $+0.022$ & $-0.043$ \\
+Rib modulus $E_r/E_c$               & 5 & $-0.008$ & $-0.008$ & $+0.013$ \\
+Steel modulus $E_s$                 & 5 & $+0.309$ & $+0.309$ & $+0.615$ \\
+\hline
+\multicolumn{5}{@{}p{0.95\linewidth}@{}}{\raggedright
+  $^{\dagger}$~Fitted to the six cases in which the averaging disc is not
+  clipped by the free surface; see Section~\ref{sec:geomcover}. Including
+  the two clipped cases would give $+0.199$ with $R^2 = 0.857$.\newline
+
+  $^{\S}$~A local average only; the underlying relationship is not a power
+  law. See \eqref{eq:fvexact}.} \\
+\hline
+\end{tabular*}
+\end{table}
+
+Three entries in Table~\ref{tab:allexp} are not independent fits but follow
+from the others by identity.
+
+Where the embedment is held fixed, $\tau_u = F_{II}/(\pi d_b L)$ differs
+from $F_{II}$ only by a constant, so the two exponents are equal. This is
+why the $n(F_{II})$ and $n(\tau_u)$ columns coincide for every factor
+except the two that change a length.
+
+For the embedment-length sweep the length itself is the variable, so
+\begin{equation}
+n(\tau_u) = n(F_{II}) - 1 = 0.131 - 1 = -0.869 ,
+\end{equation}
+and for the bar-diameter sweep at constant slenderness, where
+$L = 10 d_b$, the bonded area grows as $d_b^2$ and
+\begin{equation}
+n(\tau_u) = n(F_{II}) - 2 = 0.898 - 2 = -1.102 .
+\end{equation}
+
+Finally the slip exponent is never fitted independently. Since
+$\delta_u = F_u/k_s$,
+\begin{equation}
+\label{eq:slipexp}
+n(\delta_u) = n(F_{II}) - n(k_s) ,
+\end{equation}
+which for the bar-diameter sweep gives
+$0.886 - 1.318 = -0.432$, matching the value obtained by fitting the
+computed slips directly to four decimal places.

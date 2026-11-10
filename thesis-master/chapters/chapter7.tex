@@ -1,0 +1,587 @@
+% ======================================================================
+%  Chapter 7  --  Calibration Curves and an Analytical Development
+%                 Length Equation
+%
+%  Split from the former combined chapter. Chapter 6 carries the
+%  parametric study.
+%
+%  !! MISSING FROM YOUR .bib -- ADD BEFORE COMPILING !!
+%     as3600ConcreteStructures2018   (AS 3600:2018)
+%
+%  CROSS-REFERENCES TO CHAPTER 6:
+%     chap:parametric  sec:geomdb  sec:geomL  sec:matfc  sec:matstiff
+%     sec:geomcover    sec:lcharsens  eq:lcharfit  eq:dbexp
+%  OTHER CROSS-REFERENCES ASSUMED TO EXIST:
+%     chap:tcd  eq:capacity  eq:solution
+% ======================================================================
+
+\chapter{Calibration Curves and an Analytical Development Length
+         Equation}
+\label{chap:devlength}
+
+Chapter~\ref{chap:parametric} established which properties control the
+predicted bond capacity and by how much. Those results were obtained one
+property at a time about a single baseline, which is the right way to
+isolate an influence but the wrong way to produce something a designer can
+use. This chapter does the second thing.
+
+The capacity is traced continuously against embedment length for each of
+several bar diameters, producing a family of calibration curves. The family
+is shown to collapse onto a single master curve whose functional form
+follows from shear lag rather than from curve fitting, and that master curve
+is then inverted to give a closed-form expression for development length in
+which the yield stress of the bar appears exactly once. The chapter closes
+by establishing the limit that the saturation of
+Section~\ref{sec:geomL} imposes on that expression, which turns out to
+govern its interpretation entirely.
+
+
+% ======================================================================
+\section{The calibration curve family}
+\label{sec:curvefamily}
+
+\subsection{Construction}
+
+Four bar diameters between \SI{10}{} and \SI{20}{\milli\metre} were each run
+at fifteen embedments between $L/d_b = 2$ and \num{30}, giving sixty cases.
+All other properties are held at the baseline of
+Table~\ref{tab:factorbase}: \SI{32}{\mega\pascal} concrete in a
+\SI{150}{\milli\metre} cylinder, $l_{char} = \SI{20}{\milli\metre}$,
+pull--push loading.
+
+\begin{figure}[H]
+\centering
+% \includegraphics[width=0.85\linewidth]{figures/calibration_curves}
+\caption{Calibration curves: predicted cracking load against normalised
+         embedment length for four bar diameters
+         ($f'_c = \SI{32}{\mega\pascal}$, $d_{cyl} = \SI{150}{\milli\metre}$,
+         $l_{char} = \SI{20}{\milli\metre}$, pull--push).}
+\label{fig:calcurves}
+\end{figure}
+
+Every curve has the same shape: a steep, nearly linear rise, a knee, and a
+plateau flat to within a fraction of a per cent over the remaining two
+thirds of the range. Mode~II governs at all sixty points; the yield load is
+never reached, which is the subject of Section~\ref{sec:devlimit}.
+
+\subsection{The effective length}
+
+Section~\ref{sec:geomL} established the saturation for a single bar.
+With four diameters available it can be quantified properly. Defining
+$L_{95}$ and $L_{99}$ as the embedments at which the load first reaches
+\SI{95}{} and \SI{99}{\percent} of its asymptotic value gives
+Table~\ref{tab:efflength}.
+
+\begin{table}[H]
+\centering
+\caption{Effective embedment length, read from the calibration curves.}
+\label{tab:efflength}
+\small
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}ccccc@{}}
+\hline
+$d_b$ (mm) & $L_{95}$ (mm) & $L_{95}/d_b$ & $L_{99}$ (mm) & $L_{99}/d_b$ \\
+\hline
+10 & 73  & 7.31 & 98  & 9.77 \\
+12 & 81  & 6.73 & 116 & 9.65 \\
+16 & 94  & 5.85 & 158 & 9.85 \\
+20 & 111 & 5.55 & 200 & 9.99 \\
+\hline
+\end{tabular*}
+\end{table}
+
+The two columns behave differently. At the \SI{95}{\percent} level neither
+the absolute length nor the slenderness is constant: $L_{95}$ varies by a
+factor of \num{1.5} across the diameter range and $L_{95}/d_b$ by
+\num{1.3}. At the \SI{99}{\percent} level, however, $L_{99}/d_b$ takes the
+values \num{9.77}, \num{9.65}, \num{9.85} and \num{9.99} --- a spread of
+under \SI{4}{\percent}. The embedment at which the model is within one per
+cent of saturation is therefore very close to ten bar diameters, whatever
+the bar size.
+
+
+% ======================================================================
+\section{Normalisation and the master curve}
+\label{sec:masterfit}
+
+\subsection{Single-variable normalisations fail}
+
+Plotting against $L/d_b$ does not collapse the family: at a given
+slenderness the four curves differ by up to \SI{88}{\percent}. Plotting
+against absolute $L$ is no better, at \SI{62}{\percent}. Dividing the
+ordinate by $d_b^{0.9}$ --- the exponent established in
+Section~\ref{sec:geomdb} --- reduces the spread to about \SI{27}{\percent}
+but does not remove it. Optimising the exponent numerically does no better
+than \SI{15}{\percent}.
+
+\emph{No single-variable normalisation collapses the family.} This is the
+first substantive result of the chapter: the slenderness ratio on which the
+design codes are built is not a similarity variable for this problem.
+
+The reason is that two independent length scales are present. The capacity
+is set by the bar perimeter, which scales with $d_b$, while the distance
+over which load transfers from bar to concrete is set by the shear-lag decay
+of the governing equation, which has its own scaling. Any normalisation that
+uses one variable must conflate them.
+
+\subsection{The shear-lag form}
+
+The shape in Figure~\ref{fig:calcurves} is the classical shear-lag result.
+In an elastic bonded joint the interfacial shear decays from the loaded end
+over a transfer length, so the load at which the peak stress reaches a
+limiting value grows as the hyperbolic tangent of the bonded length divided
+by that transfer length. Fitting
+\begin{equation}
+\label{eq:tanhfit}
+F_u = F_\infty \tanh\!\left(\frac{L}{L_0}\right)
+\end{equation}
+to each diameter separately gives Table~\ref{tab:tanhfit}.
+
+\begin{table}[H]
+\centering
+\caption{Parameters of \eqref{eq:tanhfit} fitted to each calibration curve.}
+\label{tab:tanhfit}
+\small
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}cccccc@{}}
+\hline
+$d_b$ & $F_\infty$ & $L_0$ & $L_0/d_b$ & RMS error & max error \\
+(mm)  & (kN)       & (mm)  &           & (\%)      & (\%) \\
+\hline
+10 & 10.825 & 44.77 & 4.48 & 3.38 & 9.63 \\
+12 & 12.766 & 48.94 & 4.08 & 2.53 & 7.32 \\
+16 & 16.619 & 60.96 & 3.81 & 3.10 & 10.68 \\
+20 & 20.269 & 70.47 & 3.52 & 4.37 & 15.25 \\
+\hline
+\end{tabular*}
+\end{table}
+
+Both parameters follow clean power laws in the diameter,
+\begin{equation}
+\label{eq:tanhparams}
+F_\infty = 1.343\, d_b^{0.907}\ \si{\kilo\newton},
+\qquad
+L_0 = 9.42\, d_b^{0.671}\ \si{\milli\metre},
+\end{equation}
+to within \SI{0.2}{} and \SI{2.1}{\percent} respectively, with $d_b$ in
+millimetres. The capacity exponent \num{0.907} agrees with the \num{0.886}
+and \num{0.898} obtained independently from the two diameter sweeps of
+Section~\ref{sec:geomdb}, which is a useful consistency check since those
+sweeps were run at single embedments and this one at fifteen.
+
+\subsection{The master curve}
+
+Substituting \eqref{eq:tanhparams} into \eqref{eq:tanhfit} and refitting all
+sixty points simultaneously gives
+\begin{equation}
+\label{eq:mastercurve}
+\boxed{\;
+F_u = 1.349\, d_b^{0.905}
+      \tanh\!\left(\frac{L}{9.32\, d_b^{0.676}}\right)\ \si{\kilo\newton}
+\;}
+\end{equation}
+with $d_b$ and $L$ in millimetres. It reproduces every point in the family
+with a root-mean-square error of \SI{3.4}{\percent}, a maximum error of
+\SI{15.3}{\percent} at the shortest embedment of the largest bar, and
+$R^2 = 0.993$.
+
+\begin{figure}[H]
+\centering
+% \includegraphics[width=0.85\linewidth]{figures/master_curve}
+\caption{The calibration curves of Figure~\ref{fig:calcurves} replotted as
+         $F_u/F_\infty$ against $L/L_0$. The four families collapse onto
+         $\tanh(L/L_0)$, reducing the spread from \SI{88}{} to
+         \SI{12}{\percent}.}
+\label{fig:mastercurve}
+\end{figure}
+
+In the normalised variables the four curves collapse to within
+\SI{12}{\percent}, against \SI{88}{\percent} unnormalised.
+
+\subsection{Why the form is mechanics and not curve fitting}
+
+Two checks distinguish \eqref{eq:mastercurve} from an arbitrary two-parameter
+fit.
+
+The asymptotes recovered by the $\tanh$ fit agree with an independent
+Richardson extrapolation of the same data to within \SI{0.1}{\percent}. The
+functional form is therefore capturing the true asymptote rather than merely
+passing near the last few points, which a form with the wrong tail behaviour
+would not do.
+
+The alternatives $F_\infty(1-\mathrm{e}^{-L/L_0})$ and
+$F_\infty L/(L_0+L)$, fitted to the same data with the same number of free
+parameters, give root-mean-square errors of \SI{4.7}{} and
+\SI{8.8}{\percent} against \SI{3.3}{\percent} for $\tanh$. The form that
+shear lag predicts is also the form that fits best.
+
+
+% ======================================================================
+\section{What sets the transfer length}
+\label{sec:transferlength}
+
+If $L_0$ were simply the elastic decay length of the governing equation, the
+fit would carry no information the solution did not already contain. The
+characteristic roots of \eqref{eq:solution} are complex,
+$\lambda = \alpha \pm \mathrm{i}\beta$, and the envelope of the decay is set
+by the real part. Table~\ref{tab:translength} compares $1/\alpha$ with the
+fitted $L_0$.
+
+\begin{table}[H]
+\centering
+\caption{Fitted transfer length against the elastic decay length of the
+         governing equation.}
+\label{tab:translength}
+\small
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}ccccc@{}}
+\hline
+$d_b$ & $\alpha = \operatorname{Re}\lambda$ & $1/\alpha$ & $L_0$ fitted
+      & $L_0 \alpha$ \\
+(mm)  & (1/mm)                              & (mm)       & (mm) & \\
+\hline
+10 & 0.05621 & 17.79 & 44.77 & 2.52 \\
+12 & 0.05250 & 19.05 & 48.94 & 2.57 \\
+16 & 0.04717 & 21.20 & 60.96 & 2.88 \\
+20 & 0.04343 & 23.03 & 70.47 & 3.06 \\
+\hline
+\end{tabular*}
+\end{table}
+
+The two lengths are of the same order and both grow with diameter, but they
+are not proportional: $1/\alpha$ follows $d_b^{0.37}$ where $L_0$ follows
+$d_b^{0.67}$, and the ratio drifts by \SI{20}{\percent} across the range.
+
+The discrepancy has the same origin as the failure of the single-variable
+normalisation in Section~\ref{sec:masterfit}. The elastic solution supplies
+one length scale, $1/\alpha$, which grows with the bar; the Area Method
+supplies a second, the averaging radius $R_{avg} = 1.32\,l_{char}$, which is
+a fixed \SI{26.4}{\milli\metre} and does not. The length over which the
+\emph{criterion} sees load transferred combines the two, and $L_0$ is that
+combined length rather than either separately.
+
+This has a testable consequence. The exponent on $d_b$ in
+\eqref{eq:tanhparams} is not a constant of the material: it should move
+towards \num{0.37} as $l_{char}$ is reduced and the averaging radius ceases
+to matter, and towards the opposite limit as $l_{char}$ grows. Repeating the
+calibration family at two further values of $l_{char}$ would confirm or
+refute it directly.
+
+
+% ======================================================================
+\section{The development length equation}
+\label{sec:devequation}
+
+\subsection{Grade independence of the calibration curve}
+
+Nothing in \eqref{eq:mastercurve} depends on the grade of the bar. The
+Mode~II capacity is a concrete cracking load determined by the geometry, the
+moduli and the concrete strengths; the yield stress enters the problem only
+through the Mode~I demand
+\begin{equation}
+\label{eq:demand}
+F_I = A_s f_{sy} = \frac{\pi d_b^2 f_{sy}}{4}.
+\end{equation}
+
+The calibration curves are therefore already the grade-independent object,
+and one family serves Grade~250, Grade~500 and Grade~600 alike. Raising the
+grade does not move the curve; it raises the horizontal line that must
+intersect it. This is what makes a single family of curves useful as a
+design aid rather than a result specific to the steel it was computed with.
+
+\subsection{Derivation}
+
+The development length is the shortest embedment at which the concrete can
+deliver the force required to yield the bar. Setting $F_u = F_I$ in
+\eqref{eq:mastercurve} and inverting the hyperbolic tangent,
+\begin{equation}
+\label{eq:devlength}
+\boxed{\;
+L_d = L_0 \operatorname{artanh}\!\left(\frac{F_I}{F_\infty}\right)
+    = 9.32\, d_b^{0.676}
+      \operatorname{artanh}\!\left(
+        \frac{\pi d_b^{2} f_{sy}}{4000 \times 1.349\, d_b^{0.905}}
+      \right)\ \si{\milli\metre}
+\;}
+\end{equation}
+with $d_b$ in millimetres and $f_{sy}$ in megapascals. The yield stress
+appears exactly once, inside the inverse hyperbolic tangent; every other
+quantity comes from the grade-independent calibration curve.
+
+\subsection{Relation to the code form}
+
+Written in terms of the mean bond stress the same statement takes the form
+the codes use. Equilibrium of the embedded length gives
+$\pi d_b L_d \tau_u = \pi d_b^2 f_{sy}/4$, so
+\begin{equation}
+\label{eq:codeform}
+\frac{L_d}{d_b} = \frac{f_{sy}}{4 \tau_u},
+\end{equation}
+which is the basic anchorage length of fib Model Code 2010 as set out by
+\textcite{cairnsBondAnchorageEmbedded2015}, with the code's design bond
+stress replaced by the $\tau_u$ the present model predicts.
+Equation~\eqref{eq:devlength} is the explicit solution of
+\eqref{eq:codeform} once the dependence of $\tau_u$ on $L_d$ is taken from
+the master curve.
+
+\paragraph{Recovery of the code form at low utilisation.}
+For $F_I \ll F_\infty$ the inverse hyperbolic tangent is linear in its
+argument and \eqref{eq:devlength} reduces to
+\begin{equation}
+\label{eq:devlinear}
+L_d \;\approx\; \frac{\pi L_0}{4 F_\infty}\, f_{sy} d_b^2
+   \;=\; 5.43\times10^{-3}\, f_{sy}\, d_b^{1.77}\ \si{\milli\metre},
+\end{equation}
+linear in the yield stress exactly as
+\textcite{as3600ConcreteStructures2018} and
+\textcite{cairnsBondAnchorageEmbedded2015} are. \emph{The codes' linear
+dependence on grade is the low-utilisation limit of
+\eqref{eq:devlength}}, and the departure from it as $F_I$ approaches
+$F_\infty$ is the model's statement that a bar worked close to the capacity
+of its surrounding concrete requires disproportionately more length.
+
+One difference survives this limit. The diameter exponent in
+\eqref{eq:devlinear} is \num{1.77} where
+\textcite{as3600ConcreteStructures2018} has \num{1.00}, so the model
+predicts a stronger size effect than the code --- a direct consequence of
+$F_\infty$ growing as $d_b^{0.91}$ while the demand grows as $d_b^2$. This
+is not merely a modelling artefact. It is the same effect that led
+\textcite{fosterDevelopmentLapLengths} to test bars from \SI{10}{} to
+\SI{37}{\milli\metre} rather than assume a single $L_d/d_b$, and the same
+effect that makes the anchorage of large high-grade bars the binding
+constraint identified by \textcite{ngChangesAustralianStandards}.
+
+
+% ======================================================================
+\section{The limit imposed by the saturation capacity}
+\label{sec:devlimit}
+
+\subsection{The condition}
+
+Equation~\eqref{eq:devlength} returns a real length only when
+$F_I < F_\infty$. The inverse hyperbolic tangent diverges as its argument
+approaches unity, which is the algebra expressing the fact that beyond the
+effective length additional embedment adds no capacity. If the force
+required to yield the bar exceeds the saturated capacity of the anchorage,
+no embedment whatever will develop the bar.
+
+\begin{table}[H]
+\centering
+\caption{Saturated capacity against the force required to yield the bar
+         ($f_{sy} = \SI{550}{\mega\pascal}$,
+          $f'_c = \SI{32}{\mega\pascal}$,
+          $d_{cyl} = \SI{150}{\milli\metre}$,
+          $l_{char} = \SI{20}{\milli\metre}$).}
+\label{tab:devcheck}
+\small
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}ccccc@{}}
+\hline
+$d_b$ & $F_I$ & $F_\infty$ & $F_\infty/F_I$ & $f_{sy,\max}$ \\
+(mm)  & (kN)  & (kN)       &                & (MPa) \\
+\hline
+10 & 43.2  & 10.84 & 0.250 & 138 \\
+12 & 62.2  & 12.78 & 0.205 & 113 \\
+16 & 110.6 & 16.58 & 0.150 & 83  \\
+20 & 172.8 & 20.29 & 0.117 & 65  \\
+\hline
+\end{tabular*}
+\end{table}
+
+The condition fails in every case and by a wide margin. The last column
+gives the yield stress that the saturated capacity could just develop: from
+\SI{138}{\mega\pascal} for the \SI{10}{\milli\metre} bar down to
+\SI{65}{\mega\pascal} for the \SI{20}{\milli\metre} bar, an order of
+magnitude below any structural reinforcing steel. The margin worsens with
+bar size, because the demand grows as $d_b^2$ while $F_\infty$ grows only as
+$d_b^{0.91}$.
+
+\subsection{The size of the discrepancy}
+
+Two independent references fix the magnitude.
+
+\textcite{fosterDevelopmentLapLengths} report that an anchorage length of
+$16.2\,d_b$ develops the nominal yield strength of a Grade~600 bar, which
+corresponds to a mean bond stress at failure of
+\begin{equation}
+\tau_u = \frac{f_{sy} d_b}{4 L_d}
+       = \frac{600}{4 \times 16.2}
+       = \SI{9.26}{\mega\pascal},
+\end{equation}
+against the \SI{2.24}{\mega\pascal} the model predicts for the baseline
+specimen --- a factor of \num{4.1}.
+
+The code gives the same answer. The basic development length of
+Clause~13.1.2.2 of \textcite{as3600ConcreteStructures2018} for the baseline
+bar, with $k_1 = k_2 = k_3 = 1$, is
+\begin{equation}
+\label{eq:as3600ld}
+L_{sy.tb} = \frac{0.5 k_1 k_3 f_{sy} d_b}{k_2 \sqrt{f'_c}}
+          = \frac{0.5 \times 550 \times 12}{\sqrt{32}}
+          = \SI{583}{\milli\metre} = 48.6\,d_b ,
+\end{equation}
+which the model cannot reach at any embedment.
+
+\subsection{Calibration cannot close the gap}
+
+The obvious remedy is to calibrate $l_{char}$ upwards, since
+Section~\ref{sec:lcharsens} showed it to be the only uncalibrated parameter
+capable of moving the capacity substantially. The capacity must rise by a
+factor of \num{4.9} for the baseline bar to be developable. Extrapolating
+\eqref{eq:lcharfit}, that requires
+\begin{equation}
+\label{eq:lcharneeded}
+l_{char} = 20 \times 4.90^{1/0.738} \approx \SI{172}{\milli\metre},
+\end{equation}
+which exceeds the cover of the specimen (\SI{69}{\milli\metre}) by a factor
+of two and a half, and is an order of magnitude beyond any critical distance
+defensible as a material length scale.
+
+\emph{No admissible calibration of $l_{char}$ turns the model into an
+ultimate-capacity predictor.} What calibration can do is fit it to measured
+\emph{cracking} loads, and that is the claim Chapter~[X] should make for it.
+
+\subsection{Why the gap exists}
+
+Three explanations contribute, and they are not mutually exclusive.
+
+\paragraph{Real anchorages do not saturate, because they are not elastic.}
+In a physical pull-out the shear near the loaded end does not grow without
+limit. Once the local bond capacity is reached there, the interface softens
+and load redistributes along the bar, bringing material further from the
+loaded end into play. This is precisely what the local bond--slip
+formulations of \textcite{tangModelingLocalBond2020} and
+\textcite{chuNewBondModel2019} represent and what the present model, being
+elastic to failure, cannot. It is why codes can specify development lengths
+of forty or fifty diameters at all, and it is the principal limitation of
+the formulation.
+
+\paragraph{What is predicted is first cracking, not ultimate capacity.}
+The interaction index reaches unity when the averaged stresses first satisfy
+the failure criterion, which corresponds to the onset of longitudinal
+splitting rather than to the peak of the load--slip curve. That the
+predicted mean bond stress sits just below the concrete tensile strength
+--- \SI{2.24}{} against $f_t = \SI{2.83}{\mega\pascal}$ --- is consistent
+with a first-cracking criterion and not with an ultimate one. The factor of
+\num{4.1} is therefore largely the expected difference between cracking and
+ultimate.
+
+\paragraph{The specimen is unconfined.}
+The axisymmetric idealisation has no counterpart for transverse
+reinforcement, which in \textcite{408R03BondDevelopment} contributes a term
+scaling with $(f'_c)^{3/4}$ and in practice is what permits the shorter
+anchorages that codes allow. A model that cannot represent confinement
+should not be expected to reproduce the capacity of confined anchorages.
+
+\subsection{What the equation is therefore good for}
+
+Equation~\eqref{eq:devlength} should be read as a \emph{splitting-initiation}
+anchorage expression, not as a replacement for
+\eqref{eq:as3600ld}. In that reading it has three uses. It predicts the
+embedment beyond which no further capacity against splitting is gained,
+which Table~\ref{tab:efflength} puts at about ten diameters. It supplies the
+grade-independent shape of the capacity--embedment relationship, which the
+codes assume to be linear and which it shows is not. And once $l_{char}$ is
+calibrated against measured cracking loads it gives a quantitative
+serviceability criterion, which is the limit state the elastic model is
+actually describing.
+
+
+% ======================================================================
+\section{Comparison with code and research expressions}
+\label{sec:codecompare}
+
+Setting the absolute level aside, the \emph{form} of \eqref{eq:devlength}
+can be compared with the expressions in use.
+
+\begin{table}[H]
+\centering
+\caption{Structure of the present expression against three code and
+         research formulations.}
+\label{tab:codecompare}
+\small
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}llll@{}}
+\hline
+Source & on $f_{sy}$ & on $f'_c$ & on $c/d_b$ \\
+\hline
+\textcite{as3600ConcreteStructures2018}, Cl.~13.1.2.2
+   & linear & $(f'_c)^{-1/2}$ & through $k_3$ \\
+\textcite{cairnsBondAnchorageEmbedded2015} (MC2010)
+   & linear & $(f'_c)^{-1/2}$ & through $\alpha_2$ \\
+\textcite{408R03BondDevelopment}
+   & linear & $(f'_c)^{-1/4}$ & explicit \\
+Present model, \eqref{eq:devlength}
+   & $\operatorname{artanh}$ & $(f'_c)^{-0.39}$ & $(c/d_b)^{-0.28}$ \\
+\hline
+\end{tabular*}
+\end{table}
+
+Three observations follow.
+
+The model agrees with all three in the low-utilisation limit, as
+\eqref{eq:devlinear} shows, and departs from them as the demand approaches
+the saturated capacity, where it predicts a divergence the codes do not
+represent. Whether that divergence is physical or an artefact of the elastic
+formulation is exactly the question raised in Section~\ref{sec:devlimit};
+the honest position is that it is the latter, and that the codes are right
+to treat the relationship as linear over the range they cover.
+
+Its exponent on concrete strength, \num{0.39}, lies between the half power
+of \textcite{as3600ConcreteStructures2018} and the quarter power of
+\textcite{408R03BondDevelopment}, and Section~\ref{sec:matstiff} explains
+the position mechanically rather than empirically.
+
+Its cover exponent, \num{0.28}, is of the right sign and order but weaker
+than the empirical models, for the reason given in
+Section~\ref{sec:geomcover}: the averaging radius makes the criterion blind
+to cover beyond \SI{26.4}{\milli\metre}. This is the one structural
+dependence the model gets qualitatively right and quantitatively wrong, and
+it is a limitation of the criterion rather than of the stress field.
+
+
+% ======================================================================
+\section{Conclusions}
+\label{sec:devconc}
+
+\paragraph{The capacity--embedment relationship has a shear-lag form.}
+A family of sixty calibration curves spanning a factor of two in bar
+diameter is reproduced by the single expression \eqref{eq:mastercurve} with
+a root-mean-square error of \SI{3.4}{\percent} and $R^2 = 0.993$. The
+$\tanh$ form is not chosen for convenience: it recovers the true asymptote
+to within \SI{0.1}{\percent} and fits better than the exponential and
+hyperbolic alternatives tried against the same data.
+
+\paragraph{Slenderness is not a similarity variable.}
+No normalisation in $L/d_b$ alone, in $L$ alone, or in $L$ with the ordinate
+scaled by any power of $d_b$ reduces the spread of the family below
+\SI{15}{\percent}; the two-parameter normalisation of
+\eqref{eq:mastercurve} reduces it to \SI{12}{\percent} from \SI{88}{}. Two
+length scales are present --- the elastic decay length and the averaging
+radius --- and $L_0$ is their combination, as
+Table~\ref{tab:translength} shows.
+
+\paragraph{A grade-independent development length expression follows by
+inversion.}
+Because the model's capacity contains no $f_{sy}$, the calibration curves
+serve every grade and the yield stress enters \eqref{eq:devlength} exactly
+once. In the low-utilisation limit the expression reduces to the linear form
+used by \textcite{as3600ConcreteStructures2018} and
+\textcite{cairnsBondAnchorageEmbedded2015}, so the codes' expression is
+recovered as a special case, with one difference: the model carries a
+diameter exponent of \num{1.77} against the code's \num{1.00}, predicting a
+stronger size effect.
+
+\paragraph{The expression is bounded by the saturation capacity, and the
+bound binds.}
+Development length exists only where $F_I < F_\infty$, and the saturated
+capacity is between \SI{12}{} and \SI{25}{\percent} of the yield force
+across the four diameters examined. The predicted mean bond stress is a
+factor of \num{4.1} below that implied by
+\textcite{fosterDevelopmentLapLengths}, and no admissible value of
+$l_{char}$ closes the gap: \SI{172}{\milli\metre} would be required against
+a specimen cover of \SI{69}{\milli\metre}.
+
+\paragraph{The model should therefore be presented as a cracking model.}
+The gap is largely the expected difference between first cracking and
+ultimate capacity, compounded by the absence of post-cracking redistribution
+and of confinement. Read as a splitting-initiation criterion,
+\eqref{eq:devlength} is defensible and useful; read as a replacement for the
+code expression it is not. Chapter~[X] should calibrate $l_{char}$ against
+measured cracking loads rather than measured ultimate loads, and the
+limitations stated here should frame that calibration rather than follow it.

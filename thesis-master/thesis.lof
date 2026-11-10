@@ -1,0 +1,40 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1.1.1}{\ignorespaces Schematic of bond transfer mechanisms in reinforced concrete (ACI 408R-03, 2003).}}{3}{figure.caption.11}%
+\contentsline {figure}{\numberline {2.1.2.1}{\ignorespaces Schematic of splitting failure in reinforced concrete (Cairns, 2013).}}{4}{figure.caption.12}%
+\contentsline {figure}{\numberline {2.1.3.1}{\ignorespaces Relationship between concrete tensile strength and bond strength \blx@tocontentsinit {0}\parencite {liTensileBondAnchorage2012}.}}{5}{figure.caption.13}%
+\contentsline {figure}{\numberline {2.1.3.2}{\ignorespaces Relationship between concrete tensile strength and bar diameter \blx@tocontentsinit {0}\parencite {liTensileBondAnchorage2012}.}}{6}{figure.caption.14}%
+\contentsline {figure}{\numberline {2.1.3.3}{\ignorespaces Relationship between concrete tensile strength and concrete cover \blx@tocontentsinit {0}\parencite {liTensileBondAnchorage2012}.}}{7}{figure.caption.15}%
+\contentsline {figure}{\numberline {2.1.3.4}{\ignorespaces Relationship between concrete tensile strength and embedment length \blx@tocontentsinit {0}\parencite {liTensileBondAnchorage2012}.}}{8}{figure.caption.16}%
+\contentsline {figure}{\numberline {2.1.3.5}{\ignorespaces Relationship between concrete tensile strength and transverse confinement \blx@tocontentsinit {0}\parencite {liTensileBondAnchorage2012}.}}{9}{figure.caption.17}%
+\contentsline {figure}{\numberline {2.1.4.1}{\ignorespaces Definition of cover dimensions for fib MC2010 bond model \blx@tocontentsinit {0}\parencite {cairnsBondAnchorageEmbedded2015}.}}{12}{figure.caption.18}%
+\contentsline {figure}{\numberline {2.2.1.1}{\ignorespaces Rib pattern of 500N Class reinforcing bars \blx@tocontentsinit {0}\parencite {liTensileBondAnchorage2012}.}}{12}{figure.caption.19}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1.0.1}{\ignorespaces Bond pullout test specimen: bar, bonded length $L$, reaction plate and clearance hole.}}{28}{figure.caption.21}%
+\contentsline {figure}{\numberline {3.8.3.1}{\ignorespaces The three Theory of Critical Distances averaging geometries}}{36}{figure.caption.26}%
+\contentsline {figure}{\numberline {3.8.3.2}{\ignorespaces Area Method averaging procedure}}{37}{figure.caption.27}%
+\contentsline {figure}{\numberline {3.9.0.1}{\ignorespaces Structure of the calibration sweep}}{40}{figure.caption.31}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.2.1.1}{\ignorespaces Diagram of the adhesively bonded joint from \blx@tocontentsinit {0}\textcite {nemesModelingCylindricalAdhesively2009}.}}{43}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.2.2.1}{\ignorespaces Interfacial shear stress: benchmark and present model}}{44}{figure.caption.35}%
+\contentsline {figure}{\numberline {4.2.3.1}{\ignorespaces Circumferential stress: benchmark and present model}}{46}{figure.caption.37}%
+\contentsline {figure}{\numberline {4.3.3.1}{\ignorespaces Rod axial stress: benchmark and present model}}{51}{figure.caption.44}%
+\contentsline {figure}{\numberline {4.3.3.2}{\ignorespaces Glue-line shear stress: benchmark and present model}}{52}{figure.caption.45}%
+\contentsline {figure}{\numberline {4.3.3.3}{\ignorespaces Tangential stress: benchmark and present model}}{53}{figure.caption.46}%
+\contentsline {figure}{\numberline {4.3.3.4}{\ignorespaces Shear distribution against embedment length}}{54}{figure.caption.47}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1.1.1}{\ignorespaces Clipping of the Area Method averaging region near the loaded end}}{59}{figure.caption.51}%
+\contentsline {figure}{\numberline {5.1.2.1}{\ignorespaces Line Method sampling at the governing section}}{63}{figure.caption.58}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.2.1.1}{\ignorespaces Effect of embedment length on the baseline specimen ($d_b = \SI {12}{\milli \metre }$, $f'_c = \SI {32}{\mega \pascal }$, $r_e = \SI {75}{\milli \metre }$). (a)~The predicted cracking load levels off by about \SI {100}{\milli \metre }, gaining only \SI {1.1}{\percent } over the remaining \SI {200}{\milli \metre }. (b)~The mean bond stress continues to fall as $1/L$, because a load that has stopped growing is being divided by a length that has not.}}{74}{figure.caption.77}%
+\contentsline {figure}{\numberline {6.2.2.1}{\ignorespaces Effect of bar diameter at fixed embedment ($L = \SI {150}{\milli \metre }$, $f'_c = \SI {32}{\mega \pascal }$, $r_e = \SI {75}{\milli \metre }$). (a)~The cracking load rises almost in proportion to the diameter, following $d_b^{0.89}$. (b)~The mean bond stress is nearly constant, falling only \SI {12}{\percent } over a threefold increase in bar size, which is the same result seen another way.}}{75}{figure.caption.83}%
+\contentsline {figure}{\numberline {6.2.3.1}{\ignorespaces Effect of concrete cover ($d_b = \SI {12}{\milli \metre }$, $L = \SI {150}{\milli \metre }$, $f'_c = \SI {32}{\mega \pascal }$) on (a)~the cracking load and (b)~the mean bond stress. The two open markers are the cases in which the averaging disc does not fit inside the concrete and is cut short at the outer face; they are excluded from the fit of \eqref {eq:coverfit}. The remaining six points rise steadily.}}{77}{figure.caption.88}%
+\contentsline {figure}{\numberline {6.3.1.1}{\ignorespaces Effect of concrete strength, with $E_c$ following \blx@tocontentsinit {0}\textcite {as3600ConcreteStructures2018} Table 3.1.2 ($d_b = \SI {12}{\milli \metre }$, $L = \SI {150}{\milli \metre }$, $r_e = \SI {75}{\milli \metre }$). (a)~The predicted cracking load and (b)~the mean bond stress, both rising as $(f'_c)^{0.390}$ and flattening gently as the strength increases. Because $d_b$ and $L$ are fixed throughout this sweep the two differ only by the constant bonded area.}}{79}{figure.caption.91}%
+\contentsline {figure}{\numberline {6.3.2.1}{\ignorespaces Effect of concrete modulus at constant strength ($f'_c = \SI {32}{\mega \pascal }$, $d_b = \SI {12}{\milli \metre }$, $L = \SI {150}{\milli \metre }$, $r_e = \SI {75}{\milli \metre }$): (a)~cracking load, (b)~mean bond stress. Both \emph {fall} as the concrete stiffens, because $f_t$ and $f_v$ are held constant and only the stress distribution changes.}}{80}{figure.caption.93}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.1.1.1}{\ignorespaces Calibration curves: predicted cracking load against normalised embedment length for four bar diameters ($f'_c = \SI {32}{\mega \pascal }$, $d_{cyl} = \SI {150}{\milli \metre }$, $l_{char} = \SI {20}{\milli \metre }$, pull--push).}}{86}{figure.caption.106}%
+\contentsline {figure}{\numberline {7.2.3.1}{\ignorespaces The calibration curves of Figure~\ref {fig:calcurves} replotted as $F_u/F_\infty $ against $L/L_0$. The four families collapse onto $\tanh (L/L_0)$, reducing the spread from \SI {88}{} to \SI {12}{\percent }.}}{88}{figure.caption.109}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }

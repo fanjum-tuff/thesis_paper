@@ -1,0 +1,37 @@
+\phantomsection\addcontentsline{toc}{chapter}{Abstract} % Don't remove me!
+\chapter*{\centering{\Large Abstract}}
+
+Bond between a deformed bar and the surrounding concrete governs anchorage
+design, yet the development length provisions of AS~3600:2018, Eurocode~2 and
+\textit{fib} Model Code 2010 are empirical expressions fitted to test
+databases. They return a length but give no access to the stress field that
+produces it, and they require recalibration whenever a reinforcement grade
+falls outside the range from which they were derived, most recently for the
+SENSE600\textsuperscript{®} bars introduced in Australia by InfraBuild. An
+analytical treatment carries no such dependence on bar grade.
+
+This thesis develops a closed-form analytical model of a deformed bar bonded
+in concrete. The specimen is modelled as three concentric elastic cylinders,
+bar, rib layer and concrete; an assumed stress field satisfying equilibrium
+and interface continuity reduces the problem to one unknown function, the
+axial stress in the bar. Making the strain energy stationary yields a
+fourth-order differential equation solved in closed form, the radial-stress
+parameter following from a second stationarity condition. No numerical
+integration, discretisation or iteration is used. Failure is assessed by two
+criteria: yielding of the bar, and cracking of the concrete under a quadratic
+interaction of hoop and shear stress averaged over a semicircular region after
+Taylor's Theory of Critical Distances. Bond stiffness and slip follow from the
+same energy.
+
+The formulation is linear elastic and represents no bond degradation, so it
+applies to short embedment lengths, where the stress distribution remains
+close to elastic up to failure. It is assessed against pull-out tests rather
+than anchorage at full development length. The implementation is verified
+against two published analytical solutions, reproducing both without parameter
+adjustment, and predictions are compared with pull-out tests from the
+literature.
+
+Extending the model to the long embedments that govern development length, and
+hence to the anchorage of SENSE600\textsuperscript{®} reinforcement, requires a
+softening bond-slip law and an understanding of material non-linearity, and is the principal
+direction for further work.

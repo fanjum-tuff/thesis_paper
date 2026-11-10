@@ -1,0 +1,51 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {2.3.6.1}{\ignorespaces Simplified development length for deformed bars in tension (adapted from ACI 318-19 Table 25.4.2.3)}}{19}{table.caption.20}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {3.2.0.1}{\ignorespaces Zones of the three-layer idealisation.}}{29}{table.caption.22}%
+\contentsline {table}{\numberline {3.9.0.1}{\ignorespaces Parameter matrix for the calibration sweep}}{41}{table.caption.32}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.2.1.1}{\ignorespaces Benchmark parameters, after Table~2 of \blx@tocontentsinit {0}\textcite {nemesModelingCylindricalAdhesively2009}.}}{43}{table.caption.34}%
+\contentsline {table}{\numberline {4.2.2.1}{\ignorespaces Shear stress $\tau _{rz}$ at the benchmark load, present model against Figure~3(b) of \blx@tocontentsinit {0}\textcite {nemesModelingCylindricalAdhesively2009}. Tube values are taken at the mid-thickness of the layer, the adhesive value at the interface.}}{45}{table.caption.36}%
+\contentsline {table}{\numberline {4.2.3.1}{\ignorespaces Circumferential stress $\sigma _\theta $ at the benchmark load, present model against Figure~4(b) of \blx@tocontentsinit {0}\textcite {nemesModelingCylindricalAdhesively2009}. Tube values are taken at the mid-thickness of the layer, the adhesive value at the interface.}}{47}{table.caption.38}%
+\contentsline {table}{\numberline {4.3.2.1}{\ignorespaces Benchmark parameters, after \blx@tocontentsinit {0}\textcite {hassaniehGluedinrodTimberJoints2018}. Quantities marked $^{\dagger }$ are not stated in the source and are assumed.}}{49}{table.caption.39}%
+\contentsline {table}{\numberline {4.3.3.1}{\ignorespaces Present code against Figure~4 of \blx@tocontentsinit {0}\textcite {hassaniehGluedinrodTimberJoints2018}, evaluated on the glue line.}}{50}{table.caption.43}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {5.1.2.1}{\ignorespaces Line Method sampling at the governing station $z = 0$, reference specimen of Table~\ref {tab:refspec}. The shear vanishes identically because $\tau _{rz} = 0$ is imposed at both ends of the bonded length.}}{62}{table.caption.57}%
+\contentsline {table}{\numberline {5.1.4.1}{\ignorespaces The three critical-distance methods applied to the reference specimen of Table~\ref {tab:refspec}, $l_{\mathrm {ch}} = \SI {20}{\milli \metre }$. Stresses and $\varphi _{\max }$ are at the production discretisation; the last column is the converged value from Section~\ref {sec:sensitivity}.}}{64}{table.caption.62}%
+\contentsline {table}{\numberline {5.2.1.1}{\ignorespaces Reference specimen used throughout this chapter.}}{65}{table.caption.63}%
+\contentsline {table}{\numberline {5.2.2.1}{\ignorespaces Line Method: convergence of the predicted Mode~II capacity with the number of steps along the averaging line. Line length \SI {40}{\milli \metre }; each run averages the stress at the $n_{\mathrm {item}}$ step centres, as in \eqref {eq:lmgrid}.}}{66}{table.caption.65}%
+\contentsline {table}{\numberline {5.2.2.2}{\ignorespaces Line Method: convergence of the predicted Mode~II capacity with the number of steps along the averaging line. Line length \SI {40}{\milli \metre }; each run averages the stress at the $n_{\mathrm {item}}$ step centres, as in \eqref {eq:lmgrid}.}}{66}{table.caption.67}%
+\contentsline {table}{\numberline {5.2.2.3}{\ignorespaces Converged Mode~II capacities and the coarsest discretisation within $1\%$ of each.}}{67}{table.caption.70}%
+\contentsline {table}{\numberline {5.2.3.1}{\ignorespaces Computation time per evaluation of $F_{\mathrm {II}}$ against mesh refinement, with the discretisation error of Section~\ref {sec:meshload} alongside. Times measured on an Intel Core i9-12900H (20 logical cores, \SI {2.5}{\giga \hertz }, 32\,GB RAM) running MATLAB R2026b under Windows~11.}}{68}{table.caption.71}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {6.1.1.1}{\ignorespaces Baseline specimen for the parametric study.}}{71}{table.caption.72}%
+\contentsline {table}{\numberline {6.2.1.1}{\ignorespaces Effect of embedment length ($d_b = \SI {12}{\milli \metre }$).}}{73}{table.caption.73}%
+\contentsline {table}{\numberline {6.2.2.1}{\ignorespaces Effect of bar diameter at fixed embedment length ($L = \SI {150}{\milli \metre }$).}}{74}{table.caption.78}%
+\contentsline {table}{\numberline {6.2.2.2}{\ignorespaces Effect of bar diameter at constant slenderness ($L/d_b = 10$, so the embedment varies with the bar).}}{74}{table.caption.79}%
+\contentsline {table}{\numberline {6.2.3.1}{\ignorespaces Effect of concrete cover ($d_b = \SI {12}{\milli \metre }$, $L = \SI {150}{\milli \metre }$). The first two rows are not comparable with the rest; see the text.}}{76}{table.caption.84}%
+\contentsline {table}{\numberline {6.2.4.1}{\ignorespaces Sensitivity to the assumed rib layer thickness.}}{78}{table.caption.89}%
+\contentsline {table}{\numberline {6.3.1.1}{\ignorespaces Effect of concrete strength, with $E_c$ following \blx@tocontentsinit {0}\textcite {as3600ConcreteStructures2018} Table 3.1.2.}}{78}{table.caption.90}%
+\contentsline {table}{\numberline {6.3.2.1}{\ignorespaces Effect of concrete modulus at constant strength ($f'_c = \SI {32}{\mega \pascal }$, so $f_t = f_v$ unchanged).}}{80}{table.caption.92}%
+\contentsline {table}{\numberline {6.3.3.1}{\ignorespaces Effect of the shear-to-tensile strength ratio ($f_t = \SI {2.83}{\mega \pascal }$ held).}}{81}{table.caption.94}%
+\contentsline {table}{\numberline {6.3.4.1}{\ignorespaces The three remaining factors, each swept over five values about the baseline. Changes are quoted across the range shown.}}{82}{table.caption.95}%
+\contentsline {table}{\numberline {6.4.1.1}{\ignorespaces Sensitivity of capacity and stiffness to every factor, ranked by $|n(F_{II})|$. Here $n$ is the exponent of a power law $F_{II} \propto x^{\,n}$ fitted across each swept range, as defined in Section~\ref {sec:factorsapproach}; the cover entries exclude the two clipped cases of Table~\ref {tab:sweepcover}.}}{83}{table.caption.98}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {7.1.2.1}{\ignorespaces Effective embedment length, read from the calibration curves.}}{87}{table.caption.107}%
+\contentsline {table}{\numberline {7.2.2.1}{\ignorespaces Parameters of \eqref {eq:tanhfit} fitted to each calibration curve.}}{88}{table.caption.108}%
+\contentsline {table}{\numberline {7.3.0.1}{\ignorespaces Fitted transfer length against the elastic decay length of the governing equation.}}{89}{table.caption.110}%
+\contentsline {table}{\numberline {7.5.1.1}{\ignorespaces Saturated capacity against the force required to yield the bar ($f_{sy} = \SI {550}{\mega \pascal }$, $f'_c = \SI {32}{\mega \pascal }$, $d_{cyl} = \SI {150}{\milli \metre }$, $l_{char} = \SI {20}{\milli \metre }$).}}{91}{table.caption.112}%
+\contentsline {table}{\numberline {7.6.0.1}{\ignorespaces Structure of the present expression against three code and research formulations.}}{93}{table.caption.116}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {A.2.0.1}{\ignorespaces Least-squares working for $F_{II} \propto d_b^{\,n}$, from the bar-diameter sweep at $L = \SI {150}{\milli \metre }$.}}{99}{table.caption.124}%
+\contentsline {table}{\numberline {A.2.0.2}{\ignorespaces Residuals of the fit \eqref {eq:dbfit}.}}{99}{table.caption.125}%
+\contentsline {table}{\numberline {A.2.0.3}{\ignorespaces Whether the averaging disc fits inside the concrete. Fourteen radial items are required.}}{100}{table.caption.127}%
+\contentsline {table}{\numberline {A.2.0.4}{\ignorespaces Least-squares working for $F_{II} \propto (c/d_b)^{\,n}$, six admissible points.}}{100}{table.caption.128}%
+\contentsline {table}{\numberline {A.2.0.5}{\ignorespaces The three fits behind the concrete-strength exponent.}}{101}{table.caption.131}%
+\contentsline {table}{\numberline {A.2.0.6}{\ignorespaces Local exponent on concrete strength, measured against the value predicted by \eqref {eq:decompapp} applied interval by interval.}}{102}{table.caption.134}%
+\contentsline {table}{\numberline {A.2.0.7}{\ignorespaces Least-squares working for $F_{II} \propto (f_v/f_t)^{\,n}$.}}{102}{table.caption.137}%
+\contentsline {table}{\numberline {A.2.0.8}{\ignorespaces The closed form \eqref {eq:fvexact} against the computed values and against the power-law fit.}}{103}{table.caption.139}%
+\contentsline {table}{\numberline {A.2.0.9}{\ignorespaces Power-law exponents for every factor, fitted by \eqref {eq:lsq}. A positive exponent means the output rises with the input.}}{104}{table.caption.141}%

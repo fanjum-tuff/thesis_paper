@@ -1,0 +1,951 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global/global}
+    \entry{alaviAnalyticalProcedureFailure2025}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=7c7ce3be6dc39f3d9a5ec1d36e597d35}{%
+           family={Alavi},
+           familyi={A\bibinitperiod},
+           given={S.\bibnamedelimi Karen},
+           giveni={S\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=13185fbbef998979c216476c87f6e39a}{%
+           family={Valipour},
+           familyi={V\bibinitperiod},
+           given={Hamid\bibnamedelima R.},
+           giveni={H\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f967505fd38e5864a45cbb95f9078bbb}{%
+           family={Bradford},
+           familyi={B\bibinitperiod},
+           given={Mark\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a99a5fb0fd7ab493c651f147691a7843}
+      \strng{fullhash}{a99a5fb0fd7ab493c651f147691a7843}
+      \strng{fullhashraw}{a99a5fb0fd7ab493c651f147691a7843}
+      \strng{bibnamehash}{a99a5fb0fd7ab493c651f147691a7843}
+      \strng{authorbibnamehash}{a99a5fb0fd7ab493c651f147691a7843}
+      \strng{authornamehash}{a99a5fb0fd7ab493c651f147691a7843}
+      \strng{authorfullhash}{a99a5fb0fd7ab493c651f147691a7843}
+      \strng{authorfullhashraw}{a99a5fb0fd7ab493c651f147691a7843}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Glued-in rod (GiR) timber joints, featuring a composition of a rod, adhesive (glue), and timber, play a pivotal role within the mass timber construction industry where the performance of the GiR connections is imperative for the success of massive timber-based structural systems. However, the intricate mechanical complexities inherent in the load-displacement behaviour of the timber/adhesive joints present significant challenges in the accurate analysis and design of the GiR connections. This article endeavours to use the theory of elasticity and fracture mechanics to derive an analytical procedure for assessing the stiffness and loading capacity of the single GiR joints subjected to pull-pull, pull-push, rod-pull, and wood-pull loading configurations. In the proposed analytical model, the adherents are treated as isotropic, orthotropic, or multilayer composite materials. Given the intricate anisotropic nature of the timber and the composition of the GiR connections, a judicious combination of failure criteria inspired by continuum damage mechanics or fracture mechanics is adopted, to effectively capture the peak load associated with a wide range of failure modes. The accuracy of the proposed analytical model is evaluated through comparison with the laboratory test data, Volkersen's theory, and EN1995-1-1 models, providing insights for efficient analysis and design of timber connections with GiR.}
+      \field{issn}{01437496}
+      \field{journaltitle}{International Journal of Adhesion and Adhesives}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{title}{An Analytical Procedure for Failure and Stiffness Prediction of Glued-in Rod Timber Connections}
+      \field{urlday}{22}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{volume}{140}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \field{pages}{103992}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.ijadhadh.2025.103992
+      \endverb
+      \verb{file}
+      \verb C:\Users\Farhan\Zotero\storage\YEUJZFPJ\Alavi et al. - 2025 - An analytical procedure for failure and stiffness prediction of glued-in rod timber connections.pdf
+      \endverb
+    \endentry
+    \entry{cairnsBondAnchorageEmbedded2015}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=578e01bc7af260a803e0b293855ae925}{%
+           family={Cairns},
+           familyi={C\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{578e01bc7af260a803e0b293855ae925}
+      \strng{fullhash}{578e01bc7af260a803e0b293855ae925}
+      \strng{fullhashraw}{578e01bc7af260a803e0b293855ae925}
+      \strng{bibnamehash}{578e01bc7af260a803e0b293855ae925}
+      \strng{authorbibnamehash}{578e01bc7af260a803e0b293855ae925}
+      \strng{authornamehash}{578e01bc7af260a803e0b293855ae925}
+      \strng{authorfullhash}{578e01bc7af260a803e0b293855ae925}
+      \strng{authorfullhashraw}{578e01bc7af260a803e0b293855ae925}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper describes the changes to design provisions for embedded steel reinforcement in the fib Model Code for Concrete Structures 2010. The changes introduce new coefficients for steel grade and clear spacing between bars, and extend the range of concrete strengths covered. The way in which the contribution of hooks or anchorages is calculated has been revised and the contribution of end bearing to laps and anchorages of compression bars is recognized. The revised rules represent a move away from a distinction between laps and anchorages per se towards a distinction based on the presence or absence of transverse pressure perpendicular to the bar axis within the bond length. The benefits of staggering laps with only a proportion of bars lapped at a section are also reviewed. Finally, the potential impact of lap and anchorage performance on structural robustness is discussed, and it is concluded that this can only be achieved if bar yield precedes splitting mode bond failures.}
+      \field{issn}{1464-4177, 1751-7648}
+      \field{journaltitle}{Structural Concrete}
+      \field{langid}{english}
+      \field{month}{3}
+      \field{number}{1}
+      \field{title}{Bond and Anchorage of Embedded Steel Reinforcement in {\emph{Fib}} {{Model Code}} 2010}
+      \field{urlday}{7}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{volume}{16}
+      \field{year}{2015}
+      \field{urldateera}{ce}
+      \field{pages}{45\bibrangedash 55}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1002/suco.201400043
+      \endverb
+      \verb{file}
+      \verb C:\Users\Farhan\Zotero\storage\FZV5Y4BW\Cairns - 2015 - Bond and anchorage of embedded steel reinforcement in fib Model Code 2010.pdf
+      \endverb
+    \endentry
+    \entry{chuNewBondModel2019}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=3453fd75bc4b5bd766eb083192fb304e}{%
+           family={Chu},
+           familyi={C\bibinitperiod},
+           given={S.H.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9f925e54514e86436a8ab05ddc74891a}{%
+           family={Kwan},
+           familyi={K\bibinitperiod},
+           given={A.K.H.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d087ad23f82ea7ac0cddde196a214ff6}
+      \strng{fullhash}{d087ad23f82ea7ac0cddde196a214ff6}
+      \strng{fullhashraw}{d087ad23f82ea7ac0cddde196a214ff6}
+      \strng{bibnamehash}{d087ad23f82ea7ac0cddde196a214ff6}
+      \strng{authorbibnamehash}{d087ad23f82ea7ac0cddde196a214ff6}
+      \strng{authornamehash}{d087ad23f82ea7ac0cddde196a214ff6}
+      \strng{authorfullhash}{d087ad23f82ea7ac0cddde196a214ff6}
+      \strng{authorfullhashraw}{d087ad23f82ea7ac0cddde196a214ff6}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The addition of fibres to concrete would significantly improve the bond between the concrete and the rebars embedded therein. However, it remains a difficult task to model the rebar bond stress-slip relation of fibre reinforced concrete (FRC). In the present research, the effects of adding steel fibres on the rebar bond properties have been studied by conducting pull out tests of rebars embedded in steel FRC. Then, a new rebar bond model for steel FRC is developed by modifying the existing one for plain concrete in Model Code 2010. Besides incorporating the effects of steel fibres for extended application to steel FRC, a finite initial bond stiffness (the initial bond stiffness in Model Code 2010 is infinite) is adopted in the model for more realistic bond-slip analysis. The coefficients in the model are determined by analysing the experimental results from present study and the available data published in literature. Interestingly, it is found that the concrete strength and steel fibres have synergistic effect on the bond performance of steel FRC.}
+      \field{issn}{09589465}
+      \field{journaltitle}{Cement and Concrete Composites}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{title}{A New Bond Model for Reinforcing Bars in Steel Fibre Reinforced Concrete}
+      \field{urlday}{9}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{volume}{104}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \field{pages}{103405}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.cemconcomp.2019.103405
+      \endverb
+      \verb{file}
+      \verb C:\Users\Farhan\Zotero\storage\BQCCR5J3\Chu and Kwan - 2019 - A new bond model for reinforcing bars in steel fibre reinforced concrete.pdf
+      \endverb
+    \endentry
+    \entry{fosterDevelopmentLapLengths}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=17e0af91a59179431d776847441dd4ad}{%
+           family={Foster},
+           familyi={F\bibinitperiod},
+           given={Stephen},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d56f1d88ac31f97b9849eb8480bcac5b}{%
+           family={Ng},
+           familyi={N\bibinitperiod},
+           given={Anthony},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2ff1afa3df070f14ae4a974c20fab0cc}{%
+           family={McGregor},
+           familyi={M\bibinitperiod},
+           given={Graeme},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4d4a21fb43112549b7cbc49756aba8ca}{%
+           family={Goudarzi},
+           familyi={G\bibinitperiod},
+           given={Hamid\bibnamedelimb Vali\bibnamedelima Pour},
+           giveni={H\bibinitperiod\bibinitdelim V\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6fc71c303993c97b42269d7072f8a8e7}
+      \strng{fullhash}{7340c0aa6cc2c161501ce233ecd2f186}
+      \strng{fullhashraw}{7340c0aa6cc2c161501ce233ecd2f186}
+      \strng{bibnamehash}{6fc71c303993c97b42269d7072f8a8e7}
+      \strng{authorbibnamehash}{6fc71c303993c97b42269d7072f8a8e7}
+      \strng{authornamehash}{6fc71c303993c97b42269d7072f8a8e7}
+      \strng{authorfullhash}{7340c0aa6cc2c161501ce233ecd2f186}
+      \strng{authorfullhashraw}{7340c0aa6cc2c161501ce233ecd2f186}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labeldatesource}{nodate}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This study experimentally validates the bond performance and anchorage characteristics of InfraBuild's 600 MPa Class N reinforcing bars with an optimised rib pattern. Fifty-four pull-out tests were conducted on bars from 10 mm to 37 mm in diameter in two stages, with Stage I reported previously and Stage II presented here. The findings show that an anchorage length of 16.2db is sufficient to develop nominal yield strength, while 23db consistently causes bar fracture, ensuring the full tensile capacity is achieved. A plasticity-based model developed to predict anchorage strength was validated using data from both stages and exhibited good correlation with the experimental results. Splitting failure was also examined, with the smaller diameter of the 600 MPa bars offsetting the higher stress under splitting conditions. For both bond and splitting failure, a factor of safety of 1.4 relative to the {$\phi$}-reduced stress corresponds to a strength-reduction factor ({$\phi$}) of 0.6. Comparison with AS 3600:2018 confirms that equivalent capacity Grade 600 bars can replace Grade 500 bars without increasing absolute anchorage length while maintaining similar safety margins.}
+      \field{langid}{english}
+      \field{title}{Development and {{Lap Lengths}} for 600 {{MPa Reinforcing Steels}} with an {{Improved Rib Pattern}}}
+      \verb{file}
+      \verb C:\Users\Farhan\Zotero\storage\3DP5NHQZ\Foster et al. - Development and Lap Lengths for 600 MPa Reinforcing Steels with an Improved Rib Pattern.pdf
+      \endverb
+    \endentry
+    \entry{hadiBondHighStrength2008}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3f8789144dd94736409d5fc0ac5f8d27}{%
+           family={Hadi},
+           familyi={H\bibinitperiod},
+           given={Muhammad\bibnamedelima N.S.},
+           giveni={M\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3f8789144dd94736409d5fc0ac5f8d27}
+      \strng{fullhash}{3f8789144dd94736409d5fc0ac5f8d27}
+      \strng{fullhashraw}{3f8789144dd94736409d5fc0ac5f8d27}
+      \strng{bibnamehash}{3f8789144dd94736409d5fc0ac5f8d27}
+      \strng{authorbibnamehash}{3f8789144dd94736409d5fc0ac5f8d27}
+      \strng{authornamehash}{3f8789144dd94736409d5fc0ac5f8d27}
+      \strng{authorfullhash}{3f8789144dd94736409d5fc0ac5f8d27}
+      \strng{authorfullhashraw}{3f8789144dd94736409d5fc0ac5f8d27}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper presents a study about the bond of high strength concrete with high strength steel. Fourteen pull out tests were carried out to determine the bond. The concrete strength was about 70 MPa and the steel was a 500 MPa grade. Bar diameters used were 12, 16, 20, 25, 28, 32 and 36 mm. In order to investigate the effect of cover, each test was done twice, once in a 240 mm diameter concrete cylinder and the second in a 300 mm diameter cylinder. Based on the test results a new equation representing the bond is proposed.}
+      \field{issn}{18741495}
+      \field{journaltitle}{The Open Civil Engineering Journal}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{number}{1}
+      \field{title}{Bond of {{High Strength Concrete}} with {{High Strength Reinforcing Steel}}\textasciitilde!2008-07-24\textasciitilde!2008-10-28\textasciitilde!2008-11-26\textasciitilde!}
+      \field{urlday}{1}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{volume}{2}
+      \field{year}{2008}
+      \field{urldateera}{ce}
+      \field{pages}{143\bibrangedash 147}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.2174/1874149500802010143
+      \endverb
+      \verb{file}
+      \verb C:\Users\Farhan\Zotero\storage\97YT58JQ\Hadi - 2008 - Bond of High Strength Concrete with High Strength Reinforcing Steel~!2008-07-24~!2008-10-28~!2008-11.pdf
+      \endverb
+    \endentry
+    \entry{harajliComparisonBondStrength2004}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b8f0d5db22368b8ad4a7c188123c104d}{%
+           family={Harajli},
+           familyi={H\bibinitperiod},
+           given={M.\bibnamedelimi H.},
+           giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b8f0d5db22368b8ad4a7c188123c104d}
+      \strng{fullhash}{b8f0d5db22368b8ad4a7c188123c104d}
+      \strng{fullhashraw}{b8f0d5db22368b8ad4a7c188123c104d}
+      \strng{bibnamehash}{b8f0d5db22368b8ad4a7c188123c104d}
+      \strng{authorbibnamehash}{b8f0d5db22368b8ad4a7c188123c104d}
+      \strng{authornamehash}{b8f0d5db22368b8ad4a7c188123c104d}
+      \strng{authorfullhash}{b8f0d5db22368b8ad4a7c188123c104d}
+      \strng{authorfullhashraw}{b8f0d5db22368b8ad4a7c188123c104d}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A comparative analytical study of the average bond strength at failure of reinforcing bars embedded in unconfined normalstrength concrete \textasciitilde NSC! and high-strength concrete \textasciitilde HSC! is undertaken. The analysis makes use of an experimentally derived local bond stress-slip model and considers the progressive bond deterioration along the development/splice length with the increase in bar force. Results of the average bond strength \textasciitilde or development/splice strength! predicted by the analysis showed excellent agreement with experimental data for both NSC and HSC. The analysis predicted a highly nonuniform bond stress distribution at bond failure along the development/splice length, particularly for HSC. Below a certain limit of the development/splice length \textasciitilde about 15-- 20db), the average bond strength at failure, normalized to f c81/2 , is larger for HSC as compared to NSC. However, as the development length increases beyond this limit, the normalized bond strength of HSC becomes progressively smaller than that of NSC. While normalization of the average bond strength to f c81/4 may underestimate the effect of f c8 on the bond strength for short development/splice lengths, it leads to almost identical normalized bond strength results for NSC and HSC within the practical range of development/splice lengths \textasciitilde in excess of 17-- 20db).}
+      \field{issn}{0899-1561, 1943-5533}
+      \field{journaltitle}{Journal of Materials in Civil Engineering}
+      \field{langid}{english}
+      \field{month}{8}
+      \field{number}{4}
+      \field{title}{Comparison of {{Bond Strength}} of {{Steel Bars}} in {{Normal}}- and {{High-Strength Concrete}}}
+      \field{urlday}{27}
+      \field{urlmonth}{2}
+      \field{urlyear}{2026}
+      \field{volume}{16}
+      \field{year}{2004}
+      \field{urldateera}{ce}
+      \field{pages}{365\bibrangedash 374}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1061/(ASCE)0899-1561(2004)16:4(365)
+      \endverb
+      \verb{file}
+      \verb C:\Users\Farhan\Zotero\storage\WDQ7ZMSR\Harajli - 2004 - Comparison of Bond Strength of Steel Bars in Normal- and High-Strength Concrete.pdf
+      \endverb
+    \endentry
+    \entry{hassaniehGluedinrodTimberJoints2018}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=f437ed1a15f8b1a904d75495d96ebcce}{%
+           family={Hassanieh},
+           familyi={H\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8cbb82b049bb58c0ed483d7c88813c31}{%
+           family={Valipour},
+           familyi={V\bibinitperiod},
+           given={H.\bibnamedelimi R.},
+           giveni={H\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e9901933083b97e8bd073a2b80664135}{%
+           family={Bradford},
+           familyi={B\bibinitperiod},
+           given={M.\bibnamedelimi A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8f054313c223a5e823f23d8bff52a865}{%
+           family={Jockwer},
+           familyi={J\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8c8f2ac63acc34a9f49d7403ad897543}
+      \strng{fullhash}{3275c71d28af013b1409880ee57fe01a}
+      \strng{fullhashraw}{3275c71d28af013b1409880ee57fe01a}
+      \strng{bibnamehash}{8c8f2ac63acc34a9f49d7403ad897543}
+      \strng{authorbibnamehash}{8c8f2ac63acc34a9f49d7403ad897543}
+      \strng{authornamehash}{8c8f2ac63acc34a9f49d7403ad897543}
+      \strng{authorfullhash}{3275c71d28af013b1409880ee57fe01a}
+      \strng{authorfullhashraw}{3275c71d28af013b1409880ee57fe01a}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{1359-5997, 1871-6873}
+      \field{journaltitle}{Materials and Structures}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{number}{3}
+      \field{shorttitle}{Glued-in-Rod Timber Joints}
+      \field{title}{Glued-in-Rod Timber Joints: Analytical Model and Finite Element Simulation}
+      \field{urlday}{11}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{volume}{51}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \field{pages}{61}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1617/s11527-018-1189-9
+      \endverb
+      \verb{file}
+      \verb C:\Users\Farhan\Zotero\storage\AHXSRP6H\Hassanieh et al. - 2018 - Glued-in-rod timber joints analytical model and finite element simulation.pdf
+      \endverb
+    \endentry
+    \entry{liTensileBondAnchorage2012}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=083c061f56b415052b7c3005a6e4383f}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Hai-tao},
+           giveni={H\bibinithyphendelim t\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d2996be277c4943a7d89f5e138cf595a}{%
+           family={Deeks},
+           familyi={D\bibinitperiod},
+           given={A.\bibnamedelimi J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=70167028cf6e0962ccce5954aa92dbb9}{%
+           family={Su},
+           familyi={S\bibinitperiod},
+           given={Xiao-zu},
+           giveni={X\bibinithyphendelim z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6f0e0f4b16bacc295926e808bf28a838}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Dong-sheng},
+           giveni={D\bibinithyphendelim s\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8642c489c7abe888dfe5f5a3faba76a3}
+      \strng{fullhash}{9e2b7f0e9bef362dec8838b732cf625f}
+      \strng{fullhashraw}{9e2b7f0e9bef362dec8838b732cf625f}
+      \strng{bibnamehash}{8642c489c7abe888dfe5f5a3faba76a3}
+      \strng{authorbibnamehash}{8642c489c7abe888dfe5f5a3faba76a3}
+      \strng{authornamehash}{8642c489c7abe888dfe5f5a3faba76a3}
+      \strng{authorfullhash}{9e2b7f0e9bef362dec8838b732cf625f}
+      \strng{authorfullhashraw}{9e2b7f0e9bef362dec8838b732cf625f}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In order to investigate the tensile bond anchorage properties of Australian 500N steel bars in concrete, 111 pullout tests were conducted. The precise bond slip values have been gained by using the laser displacement sensor with high resolution, including the complete bond-slip curves. How the main anchorage factors such as concrete strength, bar diameter (8, 10, 12, 16, 20, 24, 28, 32 and 36 mm) the concrete covered, embedded length and transverse reinforcement influencing the bond anchorage properties was studied under tensile condition. The process of the tensile force-slip failure for Australian 500N reinforcing steel can be divided into five stages: elastic stage, local slip stage, slip in ascent stage, slip in descent stage and remnant stage. The formula for calculating the tensile bond strength of Australian 500N reinforcing bar in concrete was proposed according to the test results, including the consistent model for tensile bond-slip relationship.}
+      \field{issn}{2095-2899, 2227-5223}
+      \field{journaltitle}{Journal of Central South University}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{number}{10}
+      \field{title}{Tensile Bond Anchorage Properties of {{Australian 500N}} Steel Bars in Concrete}
+      \field{urlday}{24}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{volume}{19}
+      \field{year}{2012}
+      \field{urldateera}{ce}
+      \field{pages}{2718\bibrangedash 2725}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1007/s11771-012-1332-7
+      \endverb
+      \verb{file}
+      \verb C:\Users\Farhan\Zotero\storage\SW3JKEKB\Li et al. - 2012 - Tensile bond anchorage properties of Australian 500N steel bars in concrete.pdf
+      \endverb
+    \endentry
+    \entry{nemesModelingCylindricalAdhesively2009}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=393ee9b8d1d308139899265ec4955af8}{%
+           family={Nemes},
+           familyi={N\bibinitperiod},
+           given={O.},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=31423e453974db592351def5e155870c}{%
+           family={Lachaud},
+           familyi={L\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{46286e6ef9cff6a9ab66d911f99d6f25}
+      \strng{fullhash}{46286e6ef9cff6a9ab66d911f99d6f25}
+      \strng{fullhashraw}{46286e6ef9cff6a9ab66d911f99d6f25}
+      \strng{bibnamehash}{46286e6ef9cff6a9ab66d911f99d6f25}
+      \strng{authorbibnamehash}{46286e6ef9cff6a9ab66d911f99d6f25}
+      \strng{authornamehash}{46286e6ef9cff6a9ab66d911f99d6f25}
+      \strng{authorfullhash}{46286e6ef9cff6a9ab66d911f99d6f25}
+      \strng{authorfullhashraw}{46286e6ef9cff6a9ab66d911f99d6f25}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0169-4243, 1568-5616}
+      \field{journaltitle}{Journal of Adhesion Science and Technology}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{10-11}
+      \field{title}{Modeling of {{Cylindrical Adhesively Bonded Joints}}}
+      \field{urlday}{22}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{volume}{23}
+      \field{year}{2009}
+      \field{urldateera}{ce}
+      \field{pages}{1383\bibrangedash 1393}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1163/156856109X432983
+      \endverb
+      \verb{file}
+      \verb C:\Users\Farhan\Zotero\storage\F3HFDM8E\Nemes and Lachaud - 2009 - Modeling of Cylindrical Adhesively Bonded Joints.pdf
+      \endverb
+    \endentry
+    \entry{ngChangesAustralianStandards}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=d56f1d88ac31f97b9849eb8480bcac5b}{%
+           family={Ng},
+           familyi={N\bibinitperiod},
+           given={Anthony},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2ff1afa3df070f14ae4a974c20fab0cc}{%
+           family={McGregor},
+           familyi={M\bibinitperiod},
+           given={Graeme},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{09922bb85898a005e5573fbf645edcb5}
+      \strng{fullhash}{09922bb85898a005e5573fbf645edcb5}
+      \strng{fullhashraw}{09922bb85898a005e5573fbf645edcb5}
+      \strng{bibnamehash}{09922bb85898a005e5573fbf645edcb5}
+      \strng{authorbibnamehash}{09922bb85898a005e5573fbf645edcb5}
+      \strng{authornamehash}{09922bb85898a005e5573fbf645edcb5}
+      \strng{authorfullhash}{09922bb85898a005e5573fbf645edcb5}
+      \strng{authorfullhashraw}{09922bb85898a005e5573fbf645edcb5}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labeldatesource}{nodate}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The demand for `greener', more sustainable construction has driven product manufacturers in Australia and around the world to conduct research and development into innovative products which offer improved environmental credentials. Given steel is already one of the most recycled materials in construction, and certainly the highest in terms of value, the logical progression is to look further up the waste hierarchy of - Reduce, Reuse and Recycle. The top of the hierarchy is obviously the best and this is where steel manufacturers are currently focused. There is a move to producing higher grades of steel designed to reduce the mass of steel consumed in the search for a more sustainable construction product.}
+      \field{langid}{english}
+      \field{title}{Changes to {{Australian Standards}} to {{Better Utilise Higher Strength Reinforcing Steels}}}
+      \verb{file}
+      \verb C:\Users\Farhan\Zotero\storage\RBMPVHBZ\Ng and McGregor - Changes to Australian Standards to Better Utilise Higher Strength Reinforcing Steels.pdf
+      \endverb
+    \endentry
+    \entry{ngCustomisedRibPattern}{article}{}{}
+      \name{author}{4}{ul=2}{%
+        {{un=0,uniquepart=base,hash=d56f1d88ac31f97b9849eb8480bcac5b}{%
+           family={Ng},
+           familyi={N\bibinitperiod},
+           given={Anthony},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2ff1afa3df070f14ae4a974c20fab0cc}{%
+           family={McGregor},
+           familyi={M\bibinitperiod},
+           given={Graeme},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=17e0af91a59179431d776847441dd4ad}{%
+           family={Foster},
+           familyi={F\bibinitperiod},
+           given={Stephen},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1f72adedfadc0833f75a5fc3ede94248}{%
+           family={Goudazi},
+           familyi={G\bibinitperiod},
+           given={Hamid\bibnamedelimb Vali\bibnamedelima Pour},
+           giveni={H\bibinitperiod\bibinitdelim V\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c00f6611feb41279854276c8cbd9d65e}
+      \strng{fullhash}{1c01b16042e4bbd8caee3a59a029ee6f}
+      \strng{fullhashraw}{1c01b16042e4bbd8caee3a59a029ee6f}
+      \strng{bibnamehash}{c00f6611feb41279854276c8cbd9d65e}
+      \strng{authorbibnamehash}{c00f6611feb41279854276c8cbd9d65e}
+      \strng{authornamehash}{c00f6611feb41279854276c8cbd9d65e}
+      \strng{authorfullhash}{1c01b16042e4bbd8caee3a59a029ee6f}
+      \strng{authorfullhashraw}{1c01b16042e4bbd8caee3a59a029ee6f}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labeldatesource}{nodate}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Reinforcing steels with a strength of 600 MPa have the potential to significantly reduce embodied carbon in structures. When designing reinforced concrete elements for ultimate strength, using these higher strength steels can save up to 17 per cent of material by mass compared to the standard 500 MPa grade steels. This saving is due to the smaller crosssectional area required. However, one challenge is the longer development lengths mandated by the Australian concrete structures standard (AS 3600), which currently limit these savings.}
+      \field{langid}{english}
+      \field{title}{Customised Rib Pattern to Reduce Development Lengths for 600 {{MPa}} Reinforcing Steels}
+      \verb{file}
+      \verb C:\Users\Farhan\Zotero\storage\UD74LHCX\Ng et al. - Customised rib pattern to reduce development lengths for 600 MPa reinforcing steels.pdf
+      \endverb
+    \endentry
+    \entry{orangunStrengthAnchoredBars}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=e9e3200c7c3922d91e15010ab05040fd}{%
+           family={Orangun},
+           familyi={O\bibinitperiod},
+           given={C\bibnamedelima O},
+           giveni={C\bibinitperiod\bibinitdelim O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2d78d8257acbf8bc253ca8f4db5e8f37}{%
+           family={Jirsa},
+           familyi={J\bibinitperiod},
+           given={J\bibnamedelima O},
+           giveni={J\bibinitperiod\bibinitdelim O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dc34529b6f3a57f49eddb5f80abb27c4}{%
+           family={Breen},
+           familyi={B\bibinitperiod},
+           given={John\bibnamedelima E},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0a25d9a6b618dde790823930f153bea9}
+      \strng{fullhash}{0a25d9a6b618dde790823930f153bea9}
+      \strng{fullhashraw}{0a25d9a6b618dde790823930f153bea9}
+      \strng{bibnamehash}{0a25d9a6b618dde790823930f153bea9}
+      \strng{authorbibnamehash}{0a25d9a6b618dde790823930f153bea9}
+      \strng{authornamehash}{0a25d9a6b618dde790823930f153bea9}
+      \strng{authorfullhash}{0a25d9a6b618dde790823930f153bea9}
+      \strng{authorfullhashraw}{0a25d9a6b618dde790823930f153bea9}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{labeldatesource}{nodate}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{The {{Strength}} of {{Anchored Bars}}: {{A Reevaluation}} of {{Test Data}} on {{Development Length}} and {{Splices}}}
+      \verb{file}
+      \verb C:\Users\Farhan\Zotero\storage\UVXJI43W\Orangun et al. - The Strength of Anchored Bars A Reevaluation of Test Data on Development Length and Splices.pdf
+      \endverb
+    \endentry
+    \entry{paulettaBondSlipBehaviorStainless2020}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=dc0fdfc97299e1442099694094d9edc2}{%
+           family={Pauletta},
+           familyi={P\bibinitperiod},
+           given={Margherita},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8d33424e1ca83127a9c25c2f4feec863}{%
+           family={Rovere},
+           familyi={R\bibinitperiod},
+           given={Nicola},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4c6cc1398b333af2b2fe60d250d37532}{%
+           family={Randl},
+           familyi={R\bibinitperiod},
+           given={Norbert},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=436c92e1d4ba59d05a0deb106b98d498}{%
+           family={Russo},
+           familyi={R\bibinitperiod},
+           given={Gaetano},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b48515de1494a87cd77fffc7756e9209}
+      \strng{fullhash}{8eca8619860d694c6f53f4836bb1f013}
+      \strng{fullhashraw}{8eca8619860d694c6f53f4836bb1f013}
+      \strng{bibnamehash}{b48515de1494a87cd77fffc7756e9209}
+      \strng{authorbibnamehash}{b48515de1494a87cd77fffc7756e9209}
+      \strng{authornamehash}{b48515de1494a87cd77fffc7756e9209}
+      \strng{authorfullhash}{8eca8619860d694c6f53f4836bb1f013}
+      \strng{authorfullhashraw}{8eca8619860d694c6f53f4836bb1f013}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Maintenance of reinforced concrete structures is a prevailing topic, especially with regard to lifeline structures and bridges, many of which are now designed with a service life beyond 100 years. Reinforcement made of ordinary (carbon) steel may corrode in aggressive environments. Stainless steel, being much more resistant to corrosion, is a valid solution to facilitate the protection of the works, increasing the service life and reducing the need for repair and maintenance. Despite the potential for stainless steel to reduce maintenance costs, studies investigating the influence of stainless steel on the behavior of reinforced concrete structures are limited. This study investigated the bond behavior of stainless steel rebars by means of experimental tests on reinforced concrete specimens with different concrete cover thicknesses, concrete strengths, and bar diameters. In each case, identical specimens with carbon steel reinforcement were tested for comparison. The failure modes of the specimens were examined, and a bond stress--slip relationship for stainless steel bars was established. This research shows that the bond behavior of stainless steel rebars is comparable to that of carbon steel bars.}
+      \field{issn}{1996-1944}
+      \field{journaltitle}{Materials}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{number}{4}
+      \field{title}{Bond-{{Slip Behavior}} between {{Stainless Steel Rebars}} and {{Concrete}}}
+      \field{urlday}{15}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{volume}{13}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \field{pages}{979}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/ma13040979
+      \endverb
+      \verb{file}
+      \verb C:\Users\Farhan\Zotero\storage\EVAVR92X\Pauletta et al. - 2020 - Bond-Slip Behavior between Stainless Steel Rebars and Concrete.pdf
+      \endverb
+    \endentry
+    \entry{ReinforcedConcreteBasics2021}{article}{}{}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Reinforced {{Concrete Basics}}}
+      \field{year}{2021}
+      \verb{file}
+      \verb C:\Users\Farhan\Zotero\storage\BM5DH7G3\2021 - Reinforced Concrete Basics.pdf
+      \endverb
+    \endentry
+    \entry{as3600ConcreteStructures2018}{manual}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a743ac22e4700266f89d7be914e2ac5e}{%
+           family={{Standards Australia}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Sydney}%
+      }
+      \list{publisher}{1}{%
+        {Standards Australia}%
+      }
+      \strng{namehash}{a743ac22e4700266f89d7be914e2ac5e}
+      \strng{fullhash}{a743ac22e4700266f89d7be914e2ac5e}
+      \strng{fullhashraw}{a743ac22e4700266f89d7be914e2ac5e}
+      \strng{bibnamehash}{a743ac22e4700266f89d7be914e2ac5e}
+      \strng{authorbibnamehash}{a743ac22e4700266f89d7be914e2ac5e}
+      \strng{authornamehash}{a743ac22e4700266f89d7be914e2ac5e}
+      \strng{authorfullhash}{a743ac22e4700266f89d7be914e2ac5e}
+      \strng{authorfullhashraw}{a743ac22e4700266f89d7be914e2ac5e}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{{{AS}} 3600:2018 {{Concrete Structures}}}
+      \field{year}{2018}
+    \endentry
+    \entry{tangModelingLocalBond2020}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=6cd5a1628c1e8bc68a56d1e0b0f993c1}{%
+           family={Tang},
+           familyi={T\bibinitperiod},
+           given={Chao-Wei},
+           giveni={C\bibinithyphendelim W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=de0545709f6384f1c5d25098d168b601}{%
+           family={Cheng},
+           familyi={C\bibinitperiod},
+           given={Chiu-Kuei},
+           giveni={C\bibinithyphendelim K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f14ab463ca1a347dd976752a6a1a6b97}
+      \strng{fullhash}{f14ab463ca1a347dd976752a6a1a6b97}
+      \strng{fullhashraw}{f14ab463ca1a347dd976752a6a1a6b97}
+      \strng{bibnamehash}{f14ab463ca1a347dd976752a6a1a6b97}
+      \strng{authorbibnamehash}{f14ab463ca1a347dd976752a6a1a6b97}
+      \strng{authornamehash}{f14ab463ca1a347dd976752a6a1a6b97}
+      \strng{authorfullhash}{f14ab463ca1a347dd976752a6a1a6b97}
+      \strng{authorfullhashraw}{f14ab463ca1a347dd976752a6a1a6b97}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Although many different analytical models of local bond stress--slip have been proposed, considering the possible differences between materials in different countries, their applicability needs to be further explored. In this paper, the local bond stress--slip characteristics of reinforcing bars embedded in concrete with different strengths were experimentally studied. The experimental variables included the concrete strength (20, 40, and 60 MPa) and deformed rebar size (\#4, \#6, and \#8). The experimental results of the bond stress--slip relationship were compared with the Euro-International Concrete Committee (CEB-Comité Euro-International du Béton)-International Federation for Prestressing (FIP-Fédération Internationale de la Précontrainte) Model Code and prediction models found in the literature. In addition, based on the test results, an empirical model of the bond stress--slip relationship was proposed. The evaluation and comparison results show that, regardless of the concrete strength grades, the predicted value calculated using the CEB-FIP Model Code will underestimate the bond strength of the specimens with different steel bar diameters. From this perspective, it is more conservative. In contrast, the proposed model can predict the test results with a reasonable accuracy.}
+      \field{issn}{1996-1944}
+      \field{journaltitle}{Materials}
+      \field{langid}{english}
+      \field{month}{8}
+      \field{number}{17}
+      \field{title}{Modeling {{Local Bond Stress}}--{{Slip Relationships}} of {{Reinforcing Bars Embedded}} in {{Concrete}} with {{Different Strengths}}}
+      \field{urlday}{9}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{volume}{13}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \field{pages}{3701}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/ma13173701
+      \endverb
+      \verb{file}
+      \verb C:\Users\Farhan\Zotero\storage\QQM6CJQ5\Tang and Cheng - 2020 - Modeling Local Bond Stress–Slip Relationships of Reinforcing Bars Embedded in Concrete with Differen.pdf
+      \endverb
+    \endentry
+    \entry{taylorGeometricalEffectsFatigue1999}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9897c1c9c28ee42ad3e67c87297303db}{%
+           family={Taylor},
+           familyi={T\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9897c1c9c28ee42ad3e67c87297303db}
+      \strng{fullhash}{9897c1c9c28ee42ad3e67c87297303db}
+      \strng{fullhashraw}{9897c1c9c28ee42ad3e67c87297303db}
+      \strng{bibnamehash}{9897c1c9c28ee42ad3e67c87297303db}
+      \strng{authorbibnamehash}{9897c1c9c28ee42ad3e67c87297303db}
+      \strng{authornamehash}{9897c1c9c28ee42ad3e67c87297303db}
+      \strng{authorfullhash}{9897c1c9c28ee42ad3e67c87297303db}
+      \strng{authorfullhashraw}{9897c1c9c28ee42ad3e67c87297303db}
+      \field{extraname}{1}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{This paper presents a theory of fatigue behaviour in materials which encompasses two areas of the subject---the behaviour of cracks and the behaviour of notches---and which also accounts for size effects in these two types of geometrical feature. The basis of this theory is well established, and has been used by others to explain notch behaviour; it involves consideration of the elastic stresses over a critical distance ahead of the feature. In this paper it is shown that, by applying the same approach to cracked bodies, one can find the critical distance for a given material, avoiding the use of an empirically-derived value. This approach correctly predicts the fatigue limits of bodies containing both cracks and notches and also predicts the experimentally-observed effects of feature size on fatigue limit. It may be extended to consider differences between tensile and bending test results and the differing effects of surface treatments. The implication of this work is that there is no fundamental difference between the fatigue limit of an uncracked body---for which crack initiation is necessary---and that of a body which already contains a crack. The results are of practical value because the approach can easily be extended to cover geometrical features of any shape and size, such as occur in engineering components.  1999 Elsevier Science Ltd. All rights reserved.}
+      \field{issn}{01421123}
+      \field{journaltitle}{International Journal of Fatigue}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{number}{5}
+      \field{shorttitle}{Geometrical Effects in Fatigue}
+      \field{title}{Geometrical Effects in Fatigue: A Unifying Theoretical Model}
+      \field{urlday}{20}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{volume}{21}
+      \field{year}{1999}
+      \field{urldateera}{ce}
+      \field{pages}{413\bibrangedash 420}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1016/S0142-1123(99)00007-9
+      \endverb
+      \verb{file}
+      \verb C:\Users\Farhan\Zotero\storage\858ANFD2\Taylor - 1999 - Geometrical effects in fatigue a unifying theoretical model.pdf
+      \endverb
+    \endentry
+    \entry{taylorTheoryCriticalDistances2010}{book}{}{}
+      \name{editor}{1}{}{%
+        {{un=0,uniquepart=base,hash=9897c1c9c28ee42ad3e67c87297303db}{%
+           family={Taylor},
+           familyi={T\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Amsterdam London}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{9897c1c9c28ee42ad3e67c87297303db}
+      \strng{fullhash}{9897c1c9c28ee42ad3e67c87297303db}
+      \strng{fullhashraw}{9897c1c9c28ee42ad3e67c87297303db}
+      \strng{bibnamehash}{9897c1c9c28ee42ad3e67c87297303db}
+      \strng{editorbibnamehash}{9897c1c9c28ee42ad3e67c87297303db}
+      \strng{editornamehash}{9897c1c9c28ee42ad3e67c87297303db}
+      \strng{editorfullhash}{9897c1c9c28ee42ad3e67c87297303db}
+      \strng{editorfullhashraw}{9897c1c9c28ee42ad3e67c87297303db}
+      \field{extraname}{2}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Critical distance methods are extremely useful for predicting fracture and fatigue in engineering components. They also represent an important development in the theory of fracture mechanics. Despite being in use for over fifty years in some fields, there has never been a book about these methods until now. So why now? Because the increasing use of computer-aided stress analysis (by FEA and other techniques) has made these methods extremely easy to use in practical situations. This is turn has prompted researchers to re-examine the underlying theory with renewed interest. The book begins with a general introduction to the phenomena of mechanical failure in materials: a basic understanding of solid mechanics and materials engineering is assumed, though appropriate introductory references are provided where necessary. After a simple explanation of how to use critical distance methods, and a more detailed exposition of the methods including their history and classification, the book continues by showing examples of how critical distance approaches can be applied to predict fracture and fatigue in different classes of materials. Subsequent chapters include some more complex theoretical areas, such as multiaxial loading and contact problems, and a range of practical examples using case studies of real engineering components taken from the authors own consultancy work. The Theory of Critical Distances will be of interest to a range of readers, from academic researchers concerned with the theoretical basis of the subject, to industrial engineers who wish to incorporate the method into modern computer-aided design and analysis. * Comprehensive collection of published data, plus new data from the author's own laboratories * A simple 'how-to-do-it' exposition of the method, plus examples and case studies * Detailed theoretical treatment * Covers all classes of materials: metals, polymers, ceramics and composites * Includes fracture, fatigue, fretting, size effects and multiaxial loading}
+      \field{isbn}{978-0-08-044478-9 978-0-08-055472-3}
+      \field{langid}{english}
+      \field{shorttitle}{The Theory of Critical Distances}
+      \field{title}{The Theory of Critical Distances: A New Perspective in Fracture Mechanics}
+      \field{year}{2010}
+    \endentry
+    \entry{SpliceStrengthConventional2000}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=585bf0d0c3acc71e5fa0403cff00b85a}{%
+           family={Zuo},
+           familyi={Z\bibinitperiod},
+           given={Jun},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f633e3ad4fa35a0dab2bddc387754be7}{%
+           family={Darwin},
+           familyi={D\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d170ef77310108525fb03c894f2ac75b}
+      \strng{fullhash}{d170ef77310108525fb03c894f2ac75b}
+      \strng{fullhashraw}{d170ef77310108525fb03c894f2ac75b}
+      \strng{bibnamehash}{d170ef77310108525fb03c894f2ac75b}
+      \strng{authorbibnamehash}{d170ef77310108525fb03c894f2ac75b}
+      \strng{authornamehash}{d170ef77310108525fb03c894f2ac75b}
+      \strng{authorfullhash}{d170ef77310108525fb03c894f2ac75b}
+      \strng{authorfullhashraw}{d170ef77310108525fb03c894f2ac75b}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0889-3241}
+      \field{journaltitle}{ACI Structural Journal}
+      \field{langid}{english}
+      \field{number}{4}
+      \field{title}{Splice {{Strength}} of {{Conventional}} and {{High Relative Rib Area Bars}} in {{Normal}} and {{High-Strength Concrete}}}
+      \field{urlday}{15}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{volume}{97}
+      \field{year}{2000}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.14359/7428
+      \endverb
+      \verb{file}
+      \verb C:\Users\Farhan\Zotero\storage\WPAC7FXY\2000 - Splice Strength of Conventional and High Relative Rib Area Bars in Normal and High-Strength Concrete.pdf
+      \endverb
+    \endentry
+    \entry{408R03BondDevelopment}{article}{}{}
+      \name{author}{5}{ul=2}{%
+        {{un=0,uniquepart=base,hash=585bf0d0c3acc71e5fa0403cff00b85a}{%
+           family={Zuo},
+           familyi={Z\bibinitperiod},
+           given={Jun},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=17b67f88c1c55e1f2cfdd8566c3adb97}{%
+           family={Leon},
+           familyi={L\bibinitperiod},
+           given={Roberto\bibnamedelima T.},
+           giveni={R\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2db3cac5164131207e70bbff3924ecdb}{%
+           family={DeVrie},
+           familyi={D\bibinitperiod},
+           given={Richard\bibnamedelima A.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=98314051f6afb99637b4263c12664013}{%
+           family={Browning},
+           familyi={B\bibinitperiod},
+           given={JoAnn},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=56fb0c6159ce09001320086b011be822}{%
+           family={Hamad},
+           familyi={H\bibinitperiod},
+           given={Bilal\bibnamedelima S.},
+           giveni={B\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a095cc622de48fc0b93272f1955853a4}
+      \strng{fullhash}{0ea942678b334fea053aa719bf888c9a}
+      \strng{fullhashraw}{0ea942678b334fea053aa719bf888c9a}
+      \strng{bibnamehash}{a095cc622de48fc0b93272f1955853a4}
+      \strng{authorbibnamehash}{a095cc622de48fc0b93272f1955853a4}
+      \strng{authornamehash}{a095cc622de48fc0b93272f1955853a4}
+      \strng{authorfullhash}{0ea942678b334fea053aa719bf888c9a}
+      \strng{authorfullhashraw}{0ea942678b334fea053aa719bf888c9a}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{labeldatesource}{nodate}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{{{408R-03 Bond}} and {{Development}} of {{Straight Reinforcing Bars}} in {{Tension}}}
+      \verb{file}
+      \verb C:\Users\Farhan\Zotero\storage\PI8C4GD9\408R-03 Bond and Development of Straight Reinforcing Bars in Tension.pdf
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
